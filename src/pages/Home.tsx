@@ -4,7 +4,8 @@ import OurProducts from '../components/OurProducts'
 import TopCategories from '../components/TopCategories'
 import Brands from '../components/Brands'
 import Values from '../components/Values'
-import LocationSection from '../components/LocationSection'
+import MapComponent from '../components/MapComponent'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -15,7 +16,8 @@ const Home = () => {
      <TopCategories/>
      <Brands/>
      <Values/>
-     <LocationSection/>
+     <MapComponent/>
+     <Footer/>
     </div>
   )
 }

@@ -11,12 +11,12 @@ const categories = [
 
 const TopCategories: React.FC = () => {
   return (
-    <section className="py-12 px-4 max-w-8xl mx-auto font-sans">
+    <section className="py-12 md:py-24 px-4 max-w-8xl mx-auto font-poppins">
       {/* Header Section */}
       <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
-          <h2 className="text-3xl font-bold text-[#4A1D1D]">Top Categories</h2>
+          <h2 className="text-3xl md:text-5xl font-medium text-[#4A1D1D]">Top Categories</h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
         <p className="text-gray-500 text-lg">Browse Our Best-Selling Categories</p>
@@ -38,7 +38,7 @@ const TopCategories: React.FC = () => {
               
               {/* Content */}
               <div className="p-4 text-center">
-                <h3 className="text-[15px] font-bold text-gray-800 h-10 flex items-center justify-center leading-tight">
+                <h3 className="text-[15px] font-semibold text-gray-800 h-10 flex items-center justify-center">
                   {cat.title}
                 </h3>
                 <button className="mt-3 w-full bg-[#B38B4D] hover:bg-[#96733D] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors">

@@ -43,18 +43,18 @@ const OurProducts: React.FC = () => {
   };
 
   return (
-    <div className="max-w-8xl mx-auto p-4 md:p-8 bg-white font-sans text-[#423129]">
+    <div className="max-w-8xl mx-auto p-4 md:p-8 bg-white font-poppins text-[#423129]">
       
       {/* --- Header Section: Categories --- */}
       <section className="my-12 md:mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-[#423129] text-center md:text-left">All Categories</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left">All Categories</h2>
         <div className="grid md:grid-cols-5 gap-4">
           {categories.map((cat, idx) => (
             <div key={idx} className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-all cursor-pointer">
               <div className="w-20 h-20 flex items-center justify-center mb-3">
                 <img src={cat.img} alt={cat.name} className="max-h-full object-contain" />
               </div>
-              <span className="text-xs font-bold text-center uppercase tracking-tight leading-tight px-2">{cat.name}</span>
+              <span className="text-md font-bold text-center px-2">{cat.name}</span>
             </div>
           ))}
         </div>
@@ -63,7 +63,7 @@ const OurProducts: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* --- Main Content: Trending Products --- */}
         <div className="lg:col-span-3">
-          <h2 className="text-2xl font-bold mb-6 text-[#423129] text-center md:text-left">Trending Products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left">Trending Products</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {trendingProducts.map((product) => (
               <div key={product.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden relative flex flex-col group shadow-sm">
@@ -76,7 +76,7 @@ const OurProducts: React.FC = () => {
                 </div>
                 
                 <div className="p-4 flex-grow flex flex-col bg-white">
-                  <h3 className="text-sm font-bold text-[#423129] leading-tight">
+                  <h3 className="text-sm font-semibold text-[#423129]">
                     {product.name}
                   </h3>
                   <p className="text-[12px] text-gray-500 mb-2 h-8">{product.subName}</p>
@@ -105,8 +105,8 @@ const OurProducts: React.FC = () => {
               />
             </div>
             <div className="p-5 text-center">
-              <h2 className="text-lg font-bold mb-3 text-[#423129]">About AL-EMAAR</h2>
-              <p className="text-gray-600 text-[13px] leading-relaxed mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#423129]">About Al-Emaar</h2>
+              <p className="text-gray-600 text-[13px] mb-6">
                 AL-EMAAR Building Solutions is a leading supplier of top-quality building materials. We provide a comprehensive range products to meet all your construction needs.
               </p>
             </div>

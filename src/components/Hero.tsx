@@ -13,7 +13,7 @@ const contentStyle: React.CSSProperties = {
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div className="hero-container font-poppins">
       <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
         <div>
           <h3 style={contentStyle}>1</h3>

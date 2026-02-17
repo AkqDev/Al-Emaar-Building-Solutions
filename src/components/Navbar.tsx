@@ -35,7 +35,7 @@ const Navbar = () => {
             className="h-12 lg:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
           />
           <div className="flex flex-col">
-            <span className="text-lg  font-black text-slate-800 leading-none uppercase">
+            <span className="text-lg  font-black text-slate-800 uppercase">
               Al-Emaar
             </span>
             <span className="text-[9px] lg:text-[10px] font-bold  text-[#292A87]">

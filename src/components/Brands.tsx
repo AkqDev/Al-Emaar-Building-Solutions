@@ -17,10 +17,10 @@ const textItems = [
 
 const Brands = () => {
   return (
-    <div className="py-20 flex flex-col justify-center items-center bg-white">
+    <div className="py-20 flex flex-col justify-center items-center bg-white font-poppins">
       {/* Centered Heading */}
       <div className="mb-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-black tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-medium text-black tracking-tight">
           Brands That Trust Us
         </h2>
       </div>
