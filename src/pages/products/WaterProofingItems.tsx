@@ -1,7 +1,7 @@
 const WaterProofingItems = () => {
   return (
     <div>
-      WaterProofing Items
+      Water Proofing Items
     </div>
   )
 }

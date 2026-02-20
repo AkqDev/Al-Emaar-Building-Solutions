@@ -1,7 +1,7 @@
 const PlumbingItems = () => {
   return (
     <div>
-      PlumbingItems
+      Plumbing Items
     </div>
   )
 }

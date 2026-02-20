@@ -1,7 +1,7 @@
 const PotaCabins = () => {
   return (
     <div>
-      pota cabins
+      Pota Cabins - Manufacturer and Dealers
     </div>
   )
 }

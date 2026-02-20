@@ -1,8 +1,7 @@
-
 const SafetyProducts = () => {
   return (
     <div>
-      safety products
+      Safety Products
     </div>
   )
 }

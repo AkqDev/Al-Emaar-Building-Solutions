@@ -42,7 +42,7 @@ const Values = () => {
           </div>
           
           <div className="pt-4 border-t border-gray-200 px-10">
-            <h2 className="text-4xl md:text-7xl font-serif text-[#012433] tracking-tight">
+            <h2 className="text-5xl md:text-8xl font-serif text-[#012433] tracking-tight">
               Our 4 Steps To <span className="relative text-[#233F90]">
                 Quality Assurance
                 <span className="absolute bottom-1 left-0 w-full h-[6px] bg-[#233F90] -z-10"></span>

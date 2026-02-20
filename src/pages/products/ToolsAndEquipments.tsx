@@ -1,8 +1,7 @@
-
 const ToolsAndEquipments = () => {
   return (
     <div>
-      ToolsAndEquipments
+      Tools and Equipments
     </div>
   )
 }

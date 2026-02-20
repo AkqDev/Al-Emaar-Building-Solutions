@@ -1,7 +1,7 @@
 const PaintsAndAdhesives = () => {
   return (
     <div>
-      PaintsAndAdhesives
+      Paints and Adhesives
     </div>
   )
 }
