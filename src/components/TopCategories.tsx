@@ -1,12 +1,18 @@
 import React from 'react';
+import light from '../assets/light.png'
+import paints from '../assets/paints.png'
+import construction from '../assets/construction.png' 
+import safety from '../assets/safety.png'
+import  plumbing from '../assets/plumbing.png'
+import water from '../assets/water.png'
 
 const categories = [
-  { id: 1, title: 'Water Proofing', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400&auto=format&fit=crop' },
-  { id: 2, title: 'Lighting & Electrical', image: 'https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=400&auto=format&fit=crop' },
-  { id: 3, title: 'Paints & Adhesives', image: 'https://images.unsplash.com/photo-1589939705384-5185138a047a?q=80&w=400&auto=format&fit=crop' },
-  { id: 4, title: 'Construction Materials', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop' },
-  { id: 5, title: 'Safety Products', image: 'https://images.unsplash.com/photo-1590483734724-3881744a338e?q=80&w=400&auto=format&fit=crop' },
-  { id: 6, title: 'Plumbing Items', image: 'https://images.unsplash.com/photo-1581244276891-9977e407d251?q=80&w=400&auto=format&fit=crop' },
+  { id: 1, title: 'Water Proofing', image:water },
+  { id: 2, title: 'Lighting & Electrical', image:light },
+  { id: 3, title: 'Paints & Adhesives', image:paints },
+  { id: 4, title: 'Construction Materials', image:construction },
+  { id: 5, title: 'Safety Products', image:safety },
+  { id: 6, title: 'Plumbing Items', image:plumbing },
 ];
 
 const TopCategories: React.FC = () => {
@@ -14,9 +20,13 @@ const TopCategories: React.FC = () => {
     <section className="py-12 md:py-24 px-4 max-w-8xl mx-auto font-poppins">
       {/* Header Section */}
       <div className="text-center mb-10">
-        <div className="flex items-center justify-center gap-4 mb-2">
+      <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
-          <h2 className="text-3xl md:text-5xl font-medium text-[#4A1D1D]">Top Categories</h2>
+             {/* Heading Section */}
+        <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
+            Top
+          <span className="text-[#6B5E18] !ml-2">Categories</span>
+        </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
         <p className="text-gray-500 text-lg">Browse Our Best-Selling Categories</p>
@@ -28,11 +38,11 @@ const TopCategories: React.FC = () => {
           <div key={cat.id} className="group cursor-pointer">
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 transition-transform duration-300 hover:-translate-y-1">
               {/* Image Container */}
-              <div className="h-40 overflow-hidden bg-gray-100">
+              <div className="h-45 overflow-hidden bg-gray-100">
                 <img 
                   src={cat.image} 
                   alt={cat.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
@@ -41,7 +51,7 @@ const TopCategories: React.FC = () => {
                 <h3 className="text-[15px] font-semibold text-gray-800 h-10 flex items-center justify-center">
                   {cat.title}
                 </h3>
-                <button className="mt-3 w-full bg-[#B38B4D] hover:bg-[#96733D] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors">
+                <button className="mt-3 w-full bg-[#6B5E18] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors">
                   View All
                 </button>
               </div>

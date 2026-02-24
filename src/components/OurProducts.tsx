@@ -1,24 +1,38 @@
 import React from 'react';
 import about from '../assets/about.png'
+import gypsum from '../assets/gypsum.png'
+import paints from '../assets/paints.png'
+import safety from '../assets/safety.png'
+import tools from '../assets/tools.png'
+import water from '../assets/water.png'
+
+// trendingProducts
+import drill from '../assets/drill.png'
+import jotun from '../assets/jotun.png'
+import upvc from '../assets/upvc.png'
+import wire from '../assets/wire.png'
+import material from '../assets/material.png'
+import cement from '../assets/cement.png'
+import roll from '../assets/roll.png'
 
 // --- Data Definitions ---
 const categories = [
-  { name: 'Water Proofing Items', img: 'https://placehold.co/100x100?text=Waterproof' },
-  { name: 'Paints & Adhesives', img: 'https://placehold.co/100x100?text=Paints' },
-  { name: 'Gypsum Board', img: 'https://placehold.co/100x100?text=Gypsum' },
-  { name: 'Tools & Equipment', img: 'https://placehold.co/100x100?text=Tools' },
-  { name: 'Safety Products', img: 'https://placehold.co/100x100?text=Safety' },
+  { name: 'Water Proofing Items', img:water },
+  { name: 'Paints & Adhesives', img:paints },
+  { name: 'Gypsum Board', img:gypsum },
+  { name: 'Tools & Equipment', img:tools},
+  { name: 'Safety Products', img:safety},
 ];
 
 const trendingProducts = [
-  { id: 1, name: 'Comnix', subName: 'Waterproofing Membrane Roll', category: 'Water Proofing', img: 'https://placehold.co/200x150' },
-  { id: 2, name: 'Jotun Jotashield', subName: 'Exterior Paint 20L', category: 'Paints & Adhesives', img: 'https://placehold.co/200x150' },
-  { id: 3, name: 'Elephant Gypsum', subName: 'Board - 8ft x 4ft', category: 'Gypsum Board', img: 'https://placehold.co/200x150' },
-  { id: 4, name: 'SDS Plus Rotary', subName: 'Hammer Drill', category: 'Tools & Equipment', img: 'https://placehold.co/200x150' },
-  { id: 5, name: 'UPVC Pipe &', subName: 'Fittings Asst Pack', category: 'Plumbing', img: 'https://placehold.co/200x150' },
-  { id: 6, name: '6mm Single Core', subName: 'Copper Cable Roll', category: 'Electrical', img: 'https://placehold.co/200x150' },
-  { id: 7, name: 'Construction Materials', subName: 'General Supply', category: 'Construction', img: 'https://placehold.co/200x150' },
-  { id: 8, name: 'Conmix OPC', subName: '50kg Bag', category: 'Cement/Materials', img: 'https://placehold.co/200x150' },
+  { id: 1, name: 'Comnix', subName: 'Waterproofing Membrane Roll', category: 'Water Proofing', img:roll  },
+  { id: 2, name: 'Jotun Jotashield', subName: 'Exterior Paint 20L', category: 'Paints & Adhesives', img: jotun },
+  { id: 3, name: 'Elephant Gypsum', subName: 'Board - 8ft x 4ft', category: 'Gypsum Board', img:gypsum },
+  { id: 4, name: 'SDS Plus Rotary', subName: 'Hammer Drill', category: 'Tools & Equipment', img:drill },
+  { id: 5, name: 'UPVC Pipe &', subName: 'Fittings Asst Pack', category: 'Plumbing', img:upvc },
+  { id: 6, name: '6mm Single Core', subName: 'Copper Cable Roll', category: 'Electrical', img:wire},
+  { id: 7, name: 'Construction Materials', subName: 'General Supply', category: 'Construction', img:material },
+  { id: 8, name: 'Conmix OPC', subName: '50kg Bag', category: 'Cement/Materials', img: cement },
 ];
 
 const OurProducts: React.FC = () => {
@@ -51,7 +65,7 @@ const OurProducts: React.FC = () => {
         <div className="grid md:grid-cols-5 gap-4">
           {categories.map((cat, idx) => (
             <div key={idx} className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-all cursor-pointer">
-              <div className="w-20 h-20 flex items-center justify-center mb-3">
+              <div className="w-auto h-60 flex items-center justify-center mb-3">
                 <img src={cat.img} alt={cat.name} className="max-h-full object-contain" />
               </div>
               <span className="text-md font-bold text-center px-2">{cat.name}</span>

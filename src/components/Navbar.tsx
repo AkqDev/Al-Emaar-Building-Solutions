@@ -73,7 +73,7 @@ const Navbar = () => {
             onMouseEnter={() => setIsBrowseOpen(true)}
             onMouseLeave={() => setIsBrowseOpen(false)}
           >
-            <button className="bg-[#3D2B1F] text-white font-bold px-6 py-4 flex items-center gap-3 transition-colors hover:bg-[#2A1D15]">
+            <button className="bg-[#6B5E18] text-white font-bold px-6 py-4 flex items-center gap-3 transition-colors">
               <LayoutGrid size={18} />
               Browse Categories
               <ChevronDown size={14} className={`transition-transform ${isBrowseOpen ? 'rotate-180' : ''}`} />
