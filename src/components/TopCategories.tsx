@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import light from '../assets/light.png'
 import paints from '../assets/paints.png'
 import construction from '../assets/construction.png' 
@@ -7,15 +8,21 @@ import  plumbing from '../assets/plumbing.png'
 import water from '../assets/water.png'
 
 const categories = [
-  { id: 1, title: 'Water Proofing', image:water },
-  { id: 2, title: 'Lighting & Electrical', image:light },
-  { id: 3, title: 'Paints & Adhesives', image:paints },
-  { id: 4, title: 'Construction Materials', image:construction },
-  { id: 5, title: 'Safety Products', image:safety },
-  { id: 6, title: 'Plumbing Items', image:plumbing },
+  { id: 1, title: 'Water Proofing', image:water, route: '/products/waterproofing-items' },
+  { id: 2, title: 'Lighting & Electrical', image:light, route: '/products/electrical-items' },
+  { id: 3, title: 'Paints & Adhesives', image:paints, route: '/products/paints-adhesives' },
+  { id: 4, title: 'Construction Materials', image:construction, route: '/products/construction-materials' },
+  { id: 5, title: 'Safety Products', image:safety, route: '/products/safety-products' },
+  { id: 6, title: 'Plumbing Items', image:plumbing, route: '/products/plumbing-items' },
 ];
 
 const TopCategories: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleViewAll = (route: string) => {
+    navigate(route);
+  };
+
   return (
     <section className="py-12 md:py-24 px-4 max-w-8xl mx-auto font-poppins">
       {/* Header Section */}
@@ -51,7 +58,10 @@ const TopCategories: React.FC = () => {
                 <h3 className="text-[15px] font-semibold text-gray-800 h-10 flex items-center justify-center">
                   {cat.title}
                 </h3>
-                <button className="mt-3 w-full bg-[#6B5E18] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors">
+                <button 
+                  onClick={() => handleViewAll(cat.route)}
+                  className="mt-3 w-full bg-[#6B5E18] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors hover:bg-[#5a4d14]"
+                >
                   View All
                 </button>
               </div>

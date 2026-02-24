@@ -50,13 +50,15 @@ const PrimaryBrands: React.FC = () => {
               key={`${index}-${logo}`}
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.3 }}
-              className="flex-shrink-0 w-32 h-24 sm:w-40 sm:h-28 md:w-56 md:h-36 lg:w-64 lg:h-40 mx-2 sm:mx-3 md:mx-4 flex items-center justify-center rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 transition-all duration-300"
+              className="flex-shrink-0 w-40 sm:w-48 md:w-56 lg:w-64 mx-2 sm:mx-3 md:mx-4 transition-all duration-300"
             >
-              <img 
-                src={logo} 
-                alt="Partner Brand" 
-                className="h-full w-full object-contain"
-              />
+              <div className="relative w-full aspect-[5/2] bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center">
+                <img 
+                  src={logo} 
+                  alt="Partner Brand" 
+                  className="max-w-full max-h-full w-auto h-auto object-contain"
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>
