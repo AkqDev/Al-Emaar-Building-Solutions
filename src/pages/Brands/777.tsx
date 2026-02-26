@@ -65,7 +65,7 @@ const products: Product[] = [
   },
 ];
 
-const 777: React.FC = () => {
+const SevenSevenSeven: React.FC = () => {
   return (
     <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-sans">
       {/* Header */}
@@ -116,4 +116,4 @@ const 777: React.FC = () => {
   );
 };
 
-export default 777;
+export default SevenSevenSeven;
