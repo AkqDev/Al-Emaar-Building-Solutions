@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
 import AboutCompany from './pages/AboutCompany'
 import ConstructionMaterials from './pages/products/ConstructionMaterials'
@@ -12,6 +13,36 @@ import PotaCabins from './pages/products/PotaCabins'
 import SafetyProducts from './pages/products/SafetyProducts'
 import ToolsAndEquipments from './pages/products/ToolsAndEquipments'
 import WaterProofingItems from './pages/products/WaterProofingItems'
+
+// Brand pages
+import SevenSevenSeven from './pages/Brands/777'
+import Ahq from './pages/Brands/Ahq'
+import Aladwaa from './pages/Brands/Aladwaa'
+import Arco from './pages/Brands/Arco'
+import Asg from './pages/Brands/Asg'
+import Atlas from './pages/Brands/Atlas'
+import Bitumat from './pages/Brands/Bitumat'
+import Bosch from './pages/Brands/Bosch'
+import Cic from './pages/Brands/Cic'
+import Cmci from './pages/Brands/Cmci'
+import Cobra from './pages/Brands/Cobra'
+import Dcp from './pages/Brands/Dcp'
+import Emtop from './pages/Brands/Emtop'
+import Fosroc from './pages/Brands/Fosroc'
+import Gulfmaid from './pages/Brands/Gulfmaid'
+import Hempel from './pages/Brands/Hempel'
+import Jazeera from './pages/Brands/Jazeera'
+import Jotun from './pages/Brands/jotun'
+import Kapci from './pages/Brands/Kapci'
+import Makita from './pages/Brands/Makita'
+import Pattex from './pages/Brands/Pattex'
+import Pedrolla from './pages/Brands/Pedrolla'
+import Sabit from './pages/Brands/Sabit'
+import Saveto from './pages/Brands/Saveto'
+import Sika from './pages/Brands/Sika'
+import Total from './pages/Brands/Total'
+import Tremco from './pages/Brands/Tremco'
+import Weber from './pages/Brands/Weber'
 
 
 const App = () => {
@@ -32,8 +63,39 @@ const App = () => {
         <Route path="/products/safety-products" element={<SafetyProducts />} />
         <Route path="/products/tools-equipments" element={<ToolsAndEquipments />} />
         <Route path="/products/waterproofing-items" element={<WaterProofingItems />} />
+
+        {/* Brand pages routes */}
+        <Route path="/777-products" element={<SevenSevenSeven />} />
+        <Route path="/ahq-products" element={<Ahq />} />
+        <Route path="/aladwaa-products" element={<Aladwaa />} />
+        <Route path="/arco-products" element={<Arco />} />
+        <Route path="/asg-products" element={<Asg />} />
+        <Route path="/atlas-products" element={<Atlas />} />
+        <Route path="/bitumat-products" element={<Bitumat />} />
+        <Route path="/bosch-products" element={<Bosch />} />
+        <Route path="/cic-products" element={<Cic />} />
+        <Route path="/cmci-products" element={<Cmci />} />
+        <Route path="/cobra-products" element={<Cobra />} />
+        <Route path="/dcp-products" element={<Dcp />} />
+        <Route path="/emtop-products" element={<Emtop />} />
+        <Route path="/fosroc-products" element={<Fosroc />} />
+        <Route path="/gulfmaid-products" element={<Gulfmaid />} />
+        <Route path="/hempel-products" element={<Hempel />} />
+        <Route path="/jazeera-products" element={<Jazeera />} />
+        <Route path="/jotun-products" element={<Jotun />} />
+        <Route path="/kapci-products" element={<Kapci />} />
+        <Route path="/makita-products" element={<Makita />} />
+        <Route path="/pattex-products" element={<Pattex />} />
+        <Route path="/pedrolla-products" element={<Pedrolla />} />
+        <Route path="/sabit-products" element={<Sabit />} />
+        <Route path="/saveto-products" element={<Saveto />} />
+        <Route path="/sika-products" element={<Sika />} />
+        <Route path="/total-products" element={<Total />} />
+        <Route path="/tremco-products" element={<Tremco />} />
+        <Route path="/weber-products" element={<Weber />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </Router>
   )
 }
