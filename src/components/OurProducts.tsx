@@ -38,8 +38,8 @@ const trendingProducts = [
 const OurProducts: React.FC = () => {
   
   const handleWhatsAppClick = (productName: string, subName: string, category: string) => {
-    // Replace with your actual WhatsApp number (e.g., 923001234567)
-    const phoneNumber = "920000000000"; 
+    // WhatsApp number for Al-Emaar Building Solutions
+    const phoneNumber = "966544837829"; 
     
     // Create a descriptive message
     const message = `Hello Al-Emaar! I am interested in purchasing the following product:\n\n` +

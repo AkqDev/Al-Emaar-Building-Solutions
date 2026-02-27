@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isBrowseOpen, setIsBrowseOpen] = useState(false);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/966XXXXXXXXX', '_blank');
+    window.open('https://wa.me/966544837829', '_blank');
   };
 
   const mainNavLinks = [
