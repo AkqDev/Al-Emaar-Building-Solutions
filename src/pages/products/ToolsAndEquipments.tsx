@@ -2,11 +2,23 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 // Imports
+import CordlessDrill from '../../assets/ToolsAndEquipments/CordlessDrill.png';
 import Cutter from '../../assets/ToolsAndEquipments/Cutter.png';
+import DiamondDisc from '../../assets/ToolsAndEquipments/DiamondDisc.png';
+import DoorKnobYale from '../../assets/ToolsAndEquipments/DoorKnobYale.png';
 import DrillMachines from '../../assets/ToolsAndEquipments/DrillMachines.png';
+import ElectricRimLock from '../../assets/ToolsAndEquipments/ElectricRimLock.png';
 import Grinder from '../../assets/ToolsAndEquipments/Grinder.png';
 import HandTools from '../../assets/ToolsAndEquipments/HandTools.png';
+import LockCylinders from '../../assets/ToolsAndEquipments/LockCylinders.png';
+import MakitaBlades from '../../assets/ToolsAndEquipments/MakitaBlades.png';
+import MetalDisc from '../../assets/ToolsAndEquipments/MetalDisc.png';
+import MultiTool from '../../assets/ToolsAndEquipments/MultiTool.png';
+import PliersTata from '../../assets/ToolsAndEquipments/PliersTata.png';
 import PowerTools from '../../assets/ToolsAndEquipments/PowerTools.png';
+import TapeMeasure from '../../assets/ToolsAndEquipments/TapeMeasure.png';
+import ToolKit from '../../assets/ToolsAndEquipments/ToolKit.png';
+import WrenchAdj from '../../assets/ToolsAndEquipments/WrenchAdj.png';
 
 interface Product {
   id: number;
@@ -45,6 +57,78 @@ const products: Product[] = [
     name: "Cutters", 
     description: "Industrial-strength cutting tools for precise sizing of tiles, metal rods, and masonry materials.", 
     image: Cutter 
+  },
+  { 
+    id: 6, 
+    name: "Cordless Drill", 
+    description: "Portable battery-powered drill with variable speed control for convenient drilling and fastening tasks.", 
+    image: CordlessDrill 
+  },
+  { 
+    id: 7, 
+    name: "Diamond Cutting Disc", 
+    description: "Premium diamond-tipped cutting discs for precise cutting of concrete, stone, and ceramic materials.", 
+    image: DiamondDisc 
+  },
+  { 
+    id: 8, 
+    name: "Yale Door Knob", 
+    description: "High-security Yale brand door knobs with durable construction and smooth locking mechanism.", 
+    image: DoorKnobYale 
+  },
+  { 
+    id: 9, 
+    name: "Electric Rim Lock", 
+    description: "Electronic rim lock system with remote access control for enhanced security and convenience.", 
+    image: ElectricRimLock 
+  },
+  { 
+    id: 10, 
+    name: "Lock Cylinders", 
+    description: "Replacement lock cylinders with anti-pick technology for doors, cabinets, and security applications.", 
+    image: LockCylinders 
+  },
+  { 
+    id: 11, 
+    name: "Makita Saw Blades", 
+    description: "Professional-grade Makita cutting blades with carbide tips for clean cuts in wood and metal.", 
+    image: MakitaBlades 
+  },
+  { 
+    id: 12, 
+    name: "Metal Cutting Disc", 
+    description: "Reinforced abrasive discs designed for fast and safe cutting of steel, iron, and metal pipes.", 
+    image: MetalDisc 
+  },
+  { 
+    id: 13, 
+    name: "Multi-Tool", 
+    description: "Versatile oscillating multi-tool for sanding, cutting, scraping, and grinding in tight spaces.", 
+    image: MultiTool 
+  },
+  { 
+    id: 14, 
+    name: "Tata Pliers", 
+    description: "Heavy-duty Tata brand pliers with ergonomic grip for cutting, gripping, and bending wire and cables.", 
+    image: PliersTata 
+  },
+  { 
+    id: 15, 
+    name: "Tape Measure", 
+    description: "Retractable measuring tape with clear markings and durable casing for accurate measurements.", 
+    image: TapeMeasure 
+  },
+  { 
+    id: 16, 
+    name: "Tool Kit", 
+    description: "Complete tool kit with organized storage case containing essential tools for repairs and installations.", 
+    image: ToolKit 
+  },
+  { 
+    id: 17, 
+    name: "Adjustable Wrench", 
+    description: "Chrome-plated adjustable wrench with wide jaw capacity for tightening and loosening various bolt sizes.", 
+    image: WrenchAdj 
   },
 ];
 
