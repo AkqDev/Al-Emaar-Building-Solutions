@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
 import AboutCompany from './pages/AboutCompany'
+
+// Products/Categories Pages
 import ConstructionMaterials from './pages/products/ConstructionMaterials'
 import ElectricalItems from './pages/products/ElectricalItems'
 import GypsumBoards from './pages/products/GypsumBoards'
