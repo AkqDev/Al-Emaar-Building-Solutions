@@ -11,6 +11,8 @@ import pattex from '../assets/ConstructionBrands/pattex.png';
 import tremco from '../assets/ConstructionBrands/tremco.png';
 import cic from '../assets/ConstructionBrands/cic.svg';
 import dcp from '../assets/ConstructionBrands/dcp.svg';
+import adhelant from '../assets/ConstructionBrands/adhelant.png';
+import dadco from '../assets/ConstructionBrands/dadco.png';
 
 interface BrandLogo {
   image: string;
@@ -28,6 +30,8 @@ const ConstructionBrands: React.FC = () => {
     { image: tremco, name: 'Tremco', route: '/tremco-products' },
     { image: cic, name: 'CIC', route: '/cic-products' },
     { image: dcp, name: 'DCP', route: '/dcp-products' },
+    { image: adhelant, name: 'Adhelant', route: '/adhelant-products' },
+    { image: dadco, name: 'Dadco', route: '/dadco-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
