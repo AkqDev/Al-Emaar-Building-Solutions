@@ -18,16 +18,17 @@ import WaterProofingItems from './pages/products/WaterProofingItems'
 
 // Brand pages
 import SevenSevenSeven from './pages/Brands/777'
+import Adhelant from './pages/Brands/Adhelant'
+import Agm from './pages/Brands/Agm'
 import Ahq from './pages/Brands/Ahq'
 import Aladwaa from './pages/Brands/Aladwaa'
-import Arco from './pages/Brands/Arco'
 import Asg from './pages/Brands/Asg'
-import Atlas from './pages/Brands/Atlas'
 import Bitumat from './pages/Brands/Bitumat'
 import Bosch from './pages/Brands/Bosch'
 import Cic from './pages/Brands/Cic'
 import Cmci from './pages/Brands/Cmci'
 import Cobra from './pages/Brands/Cobra'
+import Dadco from './pages/Brands/Dadco'
 import Dcp from './pages/Brands/Dcp'
 import Emtop from './pages/Brands/Emtop'
 import Fosroc from './pages/Brands/Fosroc'
@@ -68,16 +69,17 @@ const App = () => {
 
         {/* Brand pages routes */}
         <Route path="/777-products" element={<SevenSevenSeven />} />
+        <Route path="/adhelant-products" element={<Adhelant />} />
+        <Route path="/agm-products" element={<Agm />} />
         <Route path="/ahq-products" element={<Ahq />} />
         <Route path="/aladwaa-products" element={<Aladwaa />} />
-        <Route path="/arco-products" element={<Arco />} />
         <Route path="/asg-products" element={<Asg />} />
-        <Route path="/atlas-products" element={<Atlas />} />
         <Route path="/bitumat-products" element={<Bitumat />} />
         <Route path="/bosch-products" element={<Bosch />} />
         <Route path="/cic-products" element={<Cic />} />
         <Route path="/cmci-products" element={<Cmci />} />
         <Route path="/cobra-products" element={<Cobra />} />
+        <Route path="/dadco-products" element={<Dadco />} />
         <Route path="/dcp-products" element={<Dcp />} />
         <Route path="/emtop-products" element={<Emtop />} />
         <Route path="/fosroc-products" element={<Fosroc />} />

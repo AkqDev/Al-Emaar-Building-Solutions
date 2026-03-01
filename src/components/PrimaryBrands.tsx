@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import gulfmaid from '../assets/PrimaryBrands/gulfmaid.png';
 import brand777 from '../assets/PrimaryBrands/777.png'; 
 import hempel from '../assets/PrimaryBrands/hempel.png';
+import agm from '../assets/PrimaryBrands/agm.png';
 import sika from '../assets/PrimaryBrands/sika.png';
 import weber from '../assets/PrimaryBrands/weber.png';
 import jazeera from '../assets/PrimaryBrands/jazeera.svg';
@@ -23,6 +24,7 @@ const PrimaryBrands: React.FC = () => {
     { image: gulfmaid, name: 'Gulfmaid', route: '/gulfmaid-products' },
     { image: brand777, name: '777', route: '/777-products' },
     { image: hempel, name: 'Hempel', route: '/hempel-products' },
+    { image: agm, name: 'AGM', route: '/agm-products' },
     { image: sika, name: 'Sika', route: '/sika-products' },
     { image: weber, name: 'Weber', route: '/weber-products' },
     { image: jazeera, name: 'Jazeera', route: '/jazeera-products' },
