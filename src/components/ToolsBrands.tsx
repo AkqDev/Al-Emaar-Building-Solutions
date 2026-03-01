@@ -9,8 +9,6 @@ import emtop from '../assets/ToolsBrands/emtop.png';
 import pedrolla from '../assets/ToolsBrands/pedrolla.png';
 import total from '../assets/ToolsBrands/total.png';
 import makita from '../assets/ToolsBrands/makita.svg';
-import atlas from '../assets/ToolsBrands/atlas.svg';
-import arco from '../assets/ToolsBrands/arco.svg';
 
 interface BrandLogo {
   image: string;
@@ -26,8 +24,6 @@ const ToolsBrands: React.FC = () => {
     { image: pedrolla, name: 'Pedrolla', route: '/pedrolla-products' },
     { image: total, name: 'Total', route: '/total-products' },
     { image: makita, name: 'Makita', route: '/makita-products' },
-    { image: atlas, name: 'Atlas', route: '/atlas-products' },
-    { image: arco, name: 'Arco', route: '/arco-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
