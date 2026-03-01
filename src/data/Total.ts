@@ -1,112 +1,96 @@
+import total1 from '../assets/Brands/Total/total1.png';
+import total2 from '../assets/Brands/Total/total2.png';
+import total3 from '../assets/Brands/Total/total3.png';
+import total4 from '../assets/Brands/Total/total4.png';
+import total5 from '../assets/Brands/Total/total5.png';
+import total6 from '../assets/Brands/Total/total6.png';
+import total7 from '../assets/Brands/Total/total7.png';
+import total8 from '../assets/Brands/Total/total8.png';
+import total9 from '../assets/Brands/Total/total9.png';
+import total10 from '../assets/Brands/Total/total10.png';
+import total11 from '../assets/Brands/Total/total11.png';
+import total12 from '../assets/Brands/Total/total12.png';
+import total13 from '../assets/Brands/Total/total13.png';
+
 const TotalProducts = [
   { 
     id: 1, 
-    name: "TOTAL 9 Diamond Granite Cutting Disc", 
-    description: "Standard industrial diamond disc designed for high-speed cutting of hard granite surfaces.", 
-    productImg: "" 
+    name: "9 Diamond Granite Cutting D", 
+    description: "Professional 9-inch diamond cutting disc designed for precise granite and hard stone cutting.", 
+    productImg: total1 
   },
   { 
     id: 2, 
-    name: "TOTAL 9 Inch Granite Cutting Wheel", 
-    description: "Durable cutting wheel optimized for clean finishes and reduced material waste in stone masonry.", 
-    productImg: "" 
+    name: "One-Stop Tools Station Circular Saw 2200W", 
+    description: "Powerful 2200W circular saw with comprehensive tool station for heavy-duty cutting tasks.", 
+    productImg: total2 
   },
   { 
     id: 3, 
-    name: "TOTAL Professional 9 Granite Disc", 
-    description: "Professional-grade diamond rim for consistent performance in heavy-duty stone fabrication.", 
-    productImg: "" 
+    name: "600W Jigsaw box", 
+    description: "Versatile 600W jigsaw with complete accessory box for curved and intricate cutting work.", 
+    productImg: total3 
   },
   { 
     id: 4, 
-    name: "TOTAL 9 Heavy-Duty Granite Blade", 
-    description: "Built with a reinforced core to withstand high pressure during deep granite slab cutting.", 
-    productImg: "" 
+    name: "tools carry cases", 
+    description: "Durable and organized tool carrying cases for safe storage and transport of equipment.", 
+    productImg: total4 
   },
-  { 
+  {
     id: 5, 
-    name: "TOTAL 9 Turbo Diamond Granite Blade", 
-    description: "Features a turbo rim design for faster cooling and rapid material removal in hard stone.", 
-    productImg: "" 
+    name: "TCT saw blade 185mm 40T", 
+    description: "Tungsten carbide tipped saw blade, 185mm diameter with 40 teeth for smooth wood cuts.", 
+    productImg: total5 
   },
   { 
     id: 6, 
-    name: "TOTAL 9 Continuous Rim Granite Disc", 
-    description: "Continuous rim design specifically for chip-free, ultra-smooth cuts on granite and marble.", 
-    productImg: "" 
+    name: "wood cutting circular saw blade 7-1/4 inch", 
+    description: "High-quality 7-1/4 inch circular saw blade optimized for clean and accurate wood cutting.", 
+    productImg: total6 
   },
   { 
     id: 7, 
-    name: "TOTAL 9 Segmented Diamond Granite Wheel", 
-    description: "Segmented edge allows for better airflow and debris removal during dry cutting applications.", 
-    productImg: "" 
+    name: "diamond disc 180mm", 
+    description: "180mm diamond cutting disc for efficient cutting of tiles, concrete, and masonry materials.", 
+    productImg: total7 
   },
   { 
     id: 8, 
-    name: "TOTAL 9 High-Performance Granite Cutter", 
-    description: "Engineered for maximum efficiency and speed for high-volume stone workshops.", 
-    productImg: "" 
+    name: "TAC2111803", 
+    description: "Professional-grade tool accessory designed for precision and durability in demanding applications.", 
+    productImg: total8 
   },
   { 
     id: 9, 
-    name: "TOTAL 9 Masonry & Granite Cutting Disc", 
-    description: "Versatile blade capable of handling both standard masonry bricks and tough granite blocks.", 
-    productImg: "" 
+    name: "Lithium-Ion Random Orbit Sander", 
+    description: "Cordless lithium-ion powered random orbit sander for smooth finishing on wood and metal surfaces.", 
+    productImg: total9 
   },
   { 
     id: 10, 
-    name: "TOTAL 9 Diamond Edge Granite Blade", 
-    description: "Features a high concentration of synthetic diamonds for superior edge retention and sharpness.", 
-    productImg: "" 
+    name: "Cordless Blower", 
+    description: "Portable cordless blower for efficient cleaning of debris, dust, and leaves from work areas.", 
+    productImg: total10 
   },
   { 
     id: 11, 
-    name: "TOTAL 9 Ultra Strong Granite Wheel", 
-    description: "Enhanced bond strength to prevent segment loss when cutting the hardest granite varieties.", 
-    productImg: "" 
+    name: "Lithium-Ion Tile Vibration Machine", 
+    description: "Battery-powered tile vibration machine for professional tile installation and leveling work.", 
+    productImg: total11 
   },
   { 
     id: 12, 
-    name: "TOTAL 9 Reinforced Granite Cutting Wheel", 
-    description: "Lateral reinforcement provides extra stability and safety for hand-held angle grinders.", 
-    productImg: "" 
+    name: "Electric Mixer", 
+    description: "Heavy-duty electric mixer for mixing concrete, mortar, paint, and other construction materials.", 
+    productImg: total12 
   },
   { 
     id: 13, 
-    name: "TOTAL 9 Long-Life Diamond Granite Disc", 
-    description: "Designed with a deeper diamond segment height to extend the operational life of the blade.", 
-    productImg: "" 
+    name: "Rotary Sander", 
+    description: "Powerful rotary sander for fast material removal and surface preparation on various materials.", 
+    productImg: total13 
   },
-  { 
-    id: 14, 
-    name: "TOTAL 9 Precision Granite Cutting Blade", 
-    description: "Thinner kerf design for high-precision architectural stone work where accuracy is vital.", 
-    productImg: "" 
-  },
-  { 
-    id: 15, 
-    name: "TOTAL 9 Construction Grade Granite Wheel", 
-    description: "Reliable and cost-effective wheel for general onsite construction and stone fitting.", 
-    productImg: "" 
-  },
-  { 
-    id: 16, 
-    name: "TOTAL 9 Sharp Cut Diamond Disc for Granite", 
-    description: "Aggressive diamond matrix for fast, effortless cutting through dense granite tiles.", 
-    productImg: "" 
-  },
-  { 
-    id: 17, 
-    name: "TOTAL 9 Contractor Series Granite Blade", 
-    description: "Rugged blade designed to meet the daily demands of professional stone contractors.", 
-    productImg: "" 
-  },
-  { 
-    id: 18, 
-    name: "TOTAL 9 Industrial Granite Cutting Wheel", 
-    description: "Top-tier industrial wheel built for 9-inch grinders used in heavy factory production.", 
-    productImg: "" 
-  }
 ];
 
 export default TotalProducts;
