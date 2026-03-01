@@ -1,10 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import DadcoProducts from '../../data/dadco';
+import DewesserProducts from '../../data/Dewesser';
 
-const Dadco: React.FC = () => {
+const Dewesser: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {
-    const message = `I want to buy the ${productName} from Dadco products`;
+    const message = `I want to buy the ${productName} from Dewesser products`;
     const whatsappNumber = '966544837829';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -17,19 +17,20 @@ const Dadco: React.FC = () => {
         <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
           <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
-            Dadco <span className="text-[#6B5E18] ml-2">Products</span>
+            Dewesser
+            <span className="text-[#6B5E18] ml-2">Products</span>
           </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
         <p className="text-gray-500 text-base max-w-2xl mx-auto leading-relaxed">
-          Explore Dadco's premium waterproofing solutions and construction materials. 
-          From high-density polyester rolls to bitumen primers, find reliable products for superior protection.
+          Professional power tools and equipment for construction and industrial applications. 
+          From cordless drills to hydraulic tools, find high-quality equipment for every project.
         </p>
       </div>
 
       {/* Grid */}
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        {DadcoProducts.map((product) => (
+        {DewesserProducts.map((product) => (
           <div key={product.id} className="bg-white rounded-3xl p-8 transition-all duration-300 border border-gray-100 hover:shadow-xl group">
             
             {/* Image Section */}
@@ -64,4 +65,4 @@ const Dadco: React.FC = () => {
   );
 };
 
-export default Dadco;
+export default Dewesser;
