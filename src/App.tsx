@@ -20,7 +20,6 @@ import WaterProofingItems from './pages/products/WaterProofingItems'
 import SevenSevenSeven from './pages/Brands/777'
 import Adhelant from './pages/Brands/Adhelant'
 import Agm from './pages/Brands/Agm'
-import Ahq from './pages/Brands/Ahq'
 import Aladwaa from './pages/Brands/Aladwaa'
 import Asg from './pages/Brands/Asg'
 import Bitumat from './pages/Brands/Bitumat'
@@ -30,6 +29,7 @@ import Cmci from './pages/Brands/Cmci'
 import Cobra from './pages/Brands/Cobra'
 import Dadco from './pages/Brands/Dadco'
 import Dcp from './pages/Brands/Dcp'
+import Dewesser from './pages/Brands/Dewesser'
 import Emtop from './pages/Brands/Emtop'
 import Fosroc from './pages/Brands/Fosroc'
 import Gulfmaid from './pages/Brands/Gulfmaid'
@@ -71,7 +71,6 @@ const App = () => {
         <Route path="/777-products" element={<SevenSevenSeven />} />
         <Route path="/adhelant-products" element={<Adhelant />} />
         <Route path="/agm-products" element={<Agm />} />
-        <Route path="/ahq-products" element={<Ahq />} />
         <Route path="/aladwaa-products" element={<Aladwaa />} />
         <Route path="/asg-products" element={<Asg />} />
         <Route path="/bitumat-products" element={<Bitumat />} />
@@ -81,6 +80,7 @@ const App = () => {
         <Route path="/cobra-products" element={<Cobra />} />
         <Route path="/dadco-products" element={<Dadco />} />
         <Route path="/dcp-products" element={<Dcp />} />
+        <Route path="/dewesser-products" element={<Dewesser />} />
         <Route path="/emtop-products" element={<Emtop />} />
         <Route path="/fosroc-products" element={<Fosroc />} />
         <Route path="/gulfmaid-products" element={<Gulfmaid />} />

@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 // Imports
-import ahq from '../assets/ToolsBrands/ahq.png';
 import bosch from '../assets/ToolsBrands/bosch.png'; 
 import emtop from '../assets/ToolsBrands/emtop.png';
 import pedrolla from '../assets/ToolsBrands/pedrolla.png';
 import total from '../assets/ToolsBrands/total.png';
 import makita from '../assets/ToolsBrands/makita.svg';
+import dewesser from '../assets/ToolsBrands/Dewesser.svg';
 
 interface BrandLogo {
   image: string;
@@ -18,12 +18,12 @@ interface BrandLogo {
 
 const ToolsBrands: React.FC = () => {
   const logos: BrandLogo[] = [
-    { image: ahq, name: 'AHQ', route: '/ahq-products' },
     { image: bosch, name: 'Bosch', route: '/bosch-products' },
     { image: emtop, name: 'Emtop', route: '/emtop-products' },
     { image: pedrolla, name: 'Pedrolla', route: '/pedrolla-products' },
     { image: total, name: 'Total', route: '/total-products' },
     { image: makita, name: 'Makita', route: '/makita-products' },
+    { image: dewesser, name: 'Dewesser', route: '/dewesser-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
