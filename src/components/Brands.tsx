@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import PrimaryBrands from './PrimaryBrands'
 import ConstructionBrands from './ConstructionBrands'
 import ToolsBrands from './ToolsBrands'
-import GypsumBrands from './GypsumBrands'
 
 const Brands = () => {
   // Container animation variants
@@ -65,10 +64,6 @@ const Brands = () => {
       
       <motion.div variants={sectionVariants}>
         <ToolsBrands />
-      </motion.div>
-      
-      <motion.div variants={sectionVariants}>
-        <GypsumBrands />
       </motion.div>
     </motion.div>
   )
