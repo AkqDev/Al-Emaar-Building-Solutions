@@ -13,6 +13,8 @@ import cic from '../assets/ConstructionBrands/cic.svg';
 import dcp from '../assets/ConstructionBrands/dcp.svg';
 import adhelant from '../assets/ConstructionBrands/adhelant.png';
 import dadco from '../assets/ConstructionBrands/dadco.png';
+import saaf from '../assets/ConstructionBrands/saaf.png';
+import sabit from '../assets/ConstructionBrands/sabit.svg';
 
 interface BrandLogo {
   image: string;
@@ -32,6 +34,8 @@ const ConstructionBrands: React.FC = () => {
     { image: dcp, name: 'DCP', route: '/dcp-products' },
     { image: adhelant, name: 'Adhelant', route: '/adhelant-products' },
     { image: dadco, name: 'Dadco', route: '/dadco-products' },
+    { image: saaf, name: 'Saaf', route: '/saaf-products' },
+    { image: sabit, name: 'Sabit', route: '/sabit-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
@@ -83,7 +87,7 @@ const ConstructionBrands: React.FC = () => {
                   <img 
                     src={brand.image} 
                     alt={brand.name} 
-                    className="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                    className={`max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-105 ${brand.name === 'Saaf' ? 'scale-150' : ''}`}
                   />
                   <div className="absolute inset-0 bg-[#6B5E18]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out rounded-lg md:rounded-xl" />
                 </div>
