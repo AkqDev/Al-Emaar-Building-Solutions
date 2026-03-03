@@ -25,6 +25,9 @@ const Footer = () => {
             transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
           />
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">Al-Emaar</h2>
+          <p className="text-base md:text-lg font-semibold mt-2 leading-tight">
+            Al Emaar Al Areeq Trading Est.
+          </p>
           <motion.p 
             className="text-yellow-400 text-xl md:text-2xl font-black mt-1 tracking-wide italic"
             initial={{ opacity: 0, x: -20 }}
@@ -32,7 +35,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            Building Solutions
+            Building Solutions Jeddah
           </motion.p>
         </motion.div>
 

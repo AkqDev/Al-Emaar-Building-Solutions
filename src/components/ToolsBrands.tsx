@@ -9,6 +9,7 @@ import pedrolla from '../assets/ToolsBrands/pedrolla.png';
 import total from '../assets/ToolsBrands/total.png';
 import makita from '../assets/ToolsBrands/makita.svg';
 import dewesser from '../assets/ToolsBrands/Dewesser.svg';
+import artlife from '../assets/ToolsBrands/ArtLife.png';
 
 interface BrandLogo {
   image: string;
@@ -24,6 +25,7 @@ const ToolsBrands: React.FC = () => {
     { image: total, name: 'Total', route: '/total-products' },
     { image: makita, name: 'Makita', route: '/makita-products' },
     { image: dewesser, name: 'Dewesser', route: '/dewesser-products' },
+    { image: artlife, name: 'ArtLife', route: '/artlife-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
