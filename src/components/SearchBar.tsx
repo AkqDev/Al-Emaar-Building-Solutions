@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Search, X } from 'lucide-react';
 import { productCategories } from '../data/categories';
 
@@ -9,6 +10,20 @@ interface SearchBarProps {
 const SearchBar = ({ className = '' }: SearchBarProps) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showResults, setShowResults] = useState(false);
+  const navigate = useNavigate();
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setShowResults(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const searchResults = searchQuery.trim() 
     ? productCategories.filter(cat => 
@@ -17,7 +32,7 @@ const SearchBar = ({ className = '' }: SearchBarProps) => {
     : [];
 
   return (
-    <div className={`relative ${className}`}>
+    <div ref={searchRef} className={`relative ${className}`}>
       <div className="flex items-center border-2 border-slate-100 bg-slate-50 rounded-full overflow-hidden focus-within:border-[#292A87] focus-within:bg-white transition-all">
         <input 
           type="text" 
@@ -51,16 +66,16 @@ const SearchBar = ({ className = '' }: SearchBarProps) => {
         <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-lg shadow-xl z-50 max-h-96 overflow-y-auto">
           {searchResults.map((category) => (
             <div key={category.id} className="p-4 border-b border-slate-100 last:border-0">
-              <a 
-                href={category.path}
-                className="font-bold text-[#292A87] hover:underline block"
+              <button 
                 onClick={() => {
+                  navigate(category.path);
                   setShowResults(false);
                   setSearchQuery('');
                 }}
+                className="font-bold text-[#292A87] hover:underline block w-full text-left"
               >
                 {category.name}
-              </a>
+              </button>
             </div>
           ))}
         </div>

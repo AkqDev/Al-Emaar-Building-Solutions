@@ -73,7 +73,7 @@ const PrimaryBrands: React.FC = () => {
                 whileHover={{ scale: 1.08, y: -8 }}
                 transition={{ 
                   duration: 0.4,
-                  ease: [0.4, 0, 0.2, 1]
+                  ease: [0.4, 0, 0.2, 1] as const
                 }}
                 className="group relative cursor-pointer"
               >

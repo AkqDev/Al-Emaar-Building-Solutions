@@ -21,7 +21,7 @@ const Footer = () => {
             alt="Al-Emaar Logo" 
             className="w-28 h-28 mb-3 object-contain drop-shadow-2xl"
             whileHover={{ scale: 1.1, rotate: 5 }}
-            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] as const }}
           />
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">Al-Emaar</h2>
           <p className="text-base md:text-lg font-semibold mt-2 leading-tight">
@@ -61,7 +61,7 @@ const Footer = () => {
             transition={{ 
               duration: 0.6, 
               delay: 0.4,
-              ease: [0.4, 0, 0.2, 1]
+              ease: [0.4, 0, 0.2, 1] as const
             }}
             className="text-2xl md:text-3xl font-black text-yellow-400 mb-8 tracking-wide italic uppercase"
           >
