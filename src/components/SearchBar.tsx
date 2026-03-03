@@ -12,8 +12,7 @@ const SearchBar = ({ className = '' }: SearchBarProps) => {
 
   const searchResults = searchQuery.trim() 
     ? productCategories.filter(cat => 
-        cat.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        cat.subcategories.some(sub => sub.toLowerCase().includes(searchQuery.toLowerCase()))
+        cat.name.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : [];
 
@@ -54,22 +53,14 @@ const SearchBar = ({ className = '' }: SearchBarProps) => {
             <div key={category.id} className="p-4 border-b border-slate-100 last:border-0">
               <a 
                 href={category.path}
-                className="font-bold text-[#292A87] hover:underline block mb-2"
+                className="font-bold text-[#292A87] hover:underline block"
                 onClick={() => {
                   setShowResults(false);
                   setSearchQuery('');
                 }}
               >
-                {category.icon} {category.name}
+                {category.name}
               </a>
-              <div className="pl-4 space-y-1">
-                {category.subcategories
-                  .filter(sub => sub.toLowerCase().includes(searchQuery.toLowerCase()))
-                  .map((sub, idx) => (
-                    <div key={idx} className="text-sm text-slate-600">• {sub}</div>
-                  ))
-                }
-              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import DadcoProducts from '../../data/dadco';
+import DadcoProducts from '../../data/Dadco';
 
 const Dadco: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {

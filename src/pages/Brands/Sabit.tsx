@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import SaabitProducts from '../../data/saabit';
+import SaabitProducts from '../../data/Saabit';
 
 const Sabit: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import AdhelantProducts from '../../data/adhelant';
+import AdhelantProducts from '../../data/Adhelant';
 
 const Adhelant: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {

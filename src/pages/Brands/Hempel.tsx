@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { hempelProducts } from '../../data/hempel';
+import { hempelProducts } from '../../data/Hempel';
 
 interface ColorVariant {
   color: string;

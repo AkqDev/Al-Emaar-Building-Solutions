@@ -8,9 +8,6 @@ const MapComponent = () => {
   const address = "JDBB3313, 3313 محمد بن حمدون, 7918, AR Rabwah District, Jeddah 23533, Saudi Arabia";
   const encodedAddress = encodeURIComponent(address);
   
-  // Google Maps Embed URL for the specific address
-  const mapSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodedAddress}`;
-  
   // Fallback direct link for buttons
   const directMapLink = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
 

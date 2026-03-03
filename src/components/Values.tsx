@@ -1,4 +1,3 @@
-import React from 'react';
 import { Laptop, ClipboardCheck, Truck, Headphones } from 'lucide-react';
 
 const Values = () => {

@@ -18,12 +18,8 @@ const Hero = () => {
   return (
     <div className="hero-container font-poppins">
       <Carousel 
-        autoplay={{ dotDuration: true }} 
+        autoplay
         autoplaySpeed={5000}
-        // Change inactive dots to black with some transparency
-        dotStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }} 
-        // Change the active dot to solid black
-        activeDotStyle={{ backgroundColor: '#000' }}
       >
         {slides.map((image, index) => (
           <div key={index}>
