@@ -79,7 +79,7 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="flex items-center gap-4 bg-white/10 backdrop-blur-sm justify-center px-5 py-3 rounded-xl min-w-[280px] hover:bg-white/20 transition-all duration-300 cursor-pointer shadow-lg border border-white/20"
+              className="hidden md:flex items-center gap-4 bg-white/10 backdrop-blur-sm justify-center px-5 py-3 rounded-xl min-w-[280px] hover:bg-white/20 transition-all duration-300 cursor-pointer shadow-lg border border-white/20"
             >
               <div className="bg-white p-3 rounded-full shadow-md">
                 <FaMapMarkerAlt className="text-[#292A87] text-lg" />

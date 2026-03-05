@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import about from '../assets/about.png'
 import gypsum from '../assets/gypsum.png'
 import paints from '../assets/paints.png'
@@ -36,6 +37,7 @@ const trendingProducts = [
 ];
 
 const OurProducts: React.FC = () => {
+  const navigate = useNavigate();
   
   const handleWhatsAppClick = (productName: string, subName: string, category: string) => {
     // WhatsApp number for Al-Emaar Building Solutions
@@ -123,6 +125,12 @@ const OurProducts: React.FC = () => {
               <p className="text-gray-600 text-[13px] mb-6">
                 AL-EMAAR Building Solutions is a leading supplier of top-quality building materials. We provide a comprehensive range products to meet all your construction needs.
               </p>
+              <button 
+                onClick={() => navigate('/about')}
+                className="w-full bg-[#6B5E18] text-white py-2 rounded-lg text-sm font-bold transition-colors shadow-sm hover:bg-[#5a4e14]"
+              >
+                See More in Detail
+              </button>
             </div>
           </div>
         </div>

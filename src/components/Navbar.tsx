@@ -152,7 +152,7 @@ const Navbar = () => {
 
           {/* Search Bar Mobile */}
           <div className="px-5 py-6">
-            <SearchBar />
+            <SearchBar onResultClick={() => setIsMobileMenuOpen(false)} />
           </div>
 
           {/* Navigation Links */}
@@ -192,16 +192,7 @@ const Navbar = () => {
             </nav>
           </div>
 
-          {/* Bottom Actions - WhatsApp Only */}
-          <div className="p-5 bg-white border-t border-slate-100">
-            <button 
-              onClick={handleWhatsAppClick} 
-              className="w-full flex items-center justify-center gap-3 bg-[#4E7E48] text-white py-5 rounded-2xl font-bold text-xl shadow-lg active:scale-[0.98] transition-all"
-            >
-              <IoLogoWhatsapp size={28} />
-              Chat on WhatsApp
-            </button>
-          </div>
+
         </div>
       </div>
     </header>

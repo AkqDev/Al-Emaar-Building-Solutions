@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ali from "../assets/ali.png";
 import nadeem from "../assets/nadeem.png";
+import AboutPage from '../assets/AboutPage.png'
 
 const About = () => {
   // Animation variants
@@ -51,7 +52,7 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.div 
-            className="w-full lg:w-1/2"
+            className="w-full  text-center lg:text-left"
             variants={fadeInLeft}
           >
             <motion.div 
@@ -88,37 +89,26 @@ const About = () => {
           </motion.div>
 
           <motion.div 
-            className="w-full lg:w-1/2 flex gap-4 h-[300px] md:h-[400px]"
+            className="w-full lg:w-auto hidden lg:grid h-auto"
             variants={fadeInRight}
           >
             <motion.div 
-              className="w-1/2 h-full overflow-hidden rounded-2xl shadow-lg"
+              className="w-full h-full overflow-hidden rounded-2xl shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+                src={AboutPage}
                 alt="Warehouse"
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <motion.div 
-              className="w-1/2 h-full overflow-hidden rounded-2xl shadow-lg"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&q=80"
-                alt="Materials"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-          </motion.div>
+           </motion.div>
         </motion.div>
 
         {/* --- LEADERSHIP TEAM SECTION --- */}
         <motion.h2 
-          className="text-3xl md:text-4xl font-serif text-[#002B36] my-16 text-center"
+          className="text-3xl md:text-4xl font-['Poppins'] text-[#002B36] my-16 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -139,7 +129,7 @@ const About = () => {
               className="w-full lg:w-1/2 order-1 lg:order-2"
               variants={scaleIn}
             >
-              <div className="h-[400px] overflow-hidden rounded-2xl shadow-xl">
+              <div className="h-[400px] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 <img
                   src={ali}
                   alt="Ali Ur Rahman"
@@ -150,7 +140,7 @@ const About = () => {
 
             {/* Mobile: Content Second */}
             <motion.div 
-              className="w-full lg:w-1/2 order-2 lg:order-1"
+              className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left"
               variants={fadeInLeft}
             >
               <h3 className="text-3xl font-bold font-['Poppins'] text-[#1a1a1a] mb-4">
@@ -184,7 +174,7 @@ const About = () => {
               className="w-full lg:w-1/2 order-1"
               variants={scaleIn}
             >
-              <div className="h-[400px] overflow-hidden rounded-2xl shadow-xl">
+              <div className="h-[400px] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 <img
                   src={nadeem}
                   alt="Nadeem Farooq Khan"
@@ -195,7 +185,7 @@ const About = () => {
 
             {/* Mobile: Content Second */}
             <motion.div 
-              className="w-full lg:w-1/2 order-2"
+              className="w-full lg:w-1/2 order-2 text-center lg:text-left"
               variants={fadeInRight}
             >
               <h3 className="text-3xl font-bold font-['Poppins'] text-[#1a1a1a] mb-4">
