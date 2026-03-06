@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import light from '../assets/light.png'
 import paints from '../assets/paints.png'
@@ -23,53 +24,121 @@ const TopCategories: React.FC = () => {
     navigate(route);
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 40,
+      scale: 0.9
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <section className="py-12 md:py-24 px-4 max-w-8xl mx-auto font-poppins">
+    <motion.section 
+      className="py-12 md:py-24 px-4 max-w-8xl mx-auto font-poppins"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       {/* Header Section */}
-      <div className="text-center mb-10">
-      <div className="flex items-center justify-center gap-4 mb-2">
+      <motion.div 
+        className="text-center mb-10"
+        variants={headerVariants}
+      >
+        <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
-             {/* Heading Section */}
-        <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
+          {/* Heading Section */}
+          <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
             Top
-          <span className="text-[#6B5E18] !ml-2">Categories</span>
-        </h2>
+            <span className="text-[#6B5E18] !ml-2">Categories</span>
+          </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
         <p className="text-gray-500 text-lg">Browse Our Best-Selling Categories</p>
-      </div>
+      </motion.div>
 
       {/* Categories Grid */}
-      <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <motion.div 
+        className="grid md:grid-cols-3 lg:grid-cols-6 gap-4"
+        variants={containerVariants}
+      >
         {categories.map((cat) => (
-          <div key={cat.id} className="group cursor-pointer">
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 transition-transform duration-300 hover:-translate-y-1">
+          <motion.div 
+            key={cat.id} 
+            className="group cursor-pointer"
+            variants={itemVariants}
+            whileHover={{ 
+              y: -12,
+              scale: 1.05,
+              transition: { duration: 0.3, ease: "easeOut" }
+            }}
+          >
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 transition-transform duration-300">
               {/* Image Container */}
-              <div className="h-45 overflow-hidden bg-gray-100">
+              <motion.div 
+                className="h-45 overflow-hidden bg-gray-100"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.4 }}
+              >
                 <img 
                   src={cat.image} 
                   alt={cat.title} 
                   className="w-full h-full object-contain"
                 />
-              </div>
+              </motion.div>
               
               {/* Content */}
               <div className="p-4 text-center">
                 <h3 className="text-[15px] font-semibold text-gray-800 h-10 flex items-center justify-center">
                   {cat.title}
                 </h3>
-                <button 
+                <motion.button 
                   onClick={() => handleViewAll(cat.route)}
                   className="mt-3 w-full bg-[#6B5E18] text-white py-2 px-4 rounded-md text-sm font-semibold transition-colors hover:bg-[#5a4d14]"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
                 >
                   View All
-                </button>
+                </motion.button>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

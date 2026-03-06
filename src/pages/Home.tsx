@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import OurProducts from '../components/OurProducts'
@@ -38,6 +39,33 @@ const Home = () => {
     }
   };
 
+  // Animation variants for staggered children
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const sectionVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50 
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <>
       <SEO 
@@ -47,15 +75,40 @@ const Home = () => {
         canonical="https://alemaaralareq.com/"
         schema={homeSchema}
       />
-      <div className="pt-0">
-        <Hero/>
-        <OurProducts/>
-        <TopCategories/>
-        <Brands/>
-        <SEOContent/>
-        <Values/>
-        <MapComponent/>
-      </div>
+      <motion.div 
+        className="pt-0"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div variants={sectionVariants}>
+          <Hero/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <OurProducts/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <TopCategories/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <Brands/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <SEOContent/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <Values/>
+        </motion.div>
+        
+        <motion.div variants={sectionVariants}>
+          <MapComponent/>
+        </motion.div>
+      </motion.div>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import about from '../assets/about.png'
 import gypsum from '../assets/gypsum.png'
@@ -58,38 +59,124 @@ const OurProducts: React.FC = () => {
     window.open(whatsappUrl, '_blank');
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 30,
+      scale: 0.9
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const cardHoverVariants = {
+    hover: {
+      y: -8,
+      scale: 1.02,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <div className="max-w-8xl mx-auto p-4 md:p-8 bg-white font-poppins text-[#423129]">
       
       {/* --- Header Section: Categories --- */}
-      <section className="my-12 md:mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left">All Categories</h2>
-        <div className="grid md:grid-cols-5 gap-4">
+      <motion.section 
+        className="my-12 md:mb-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+      >
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left"
+          variants={itemVariants}
+        >
+          All Categories
+        </motion.h2>
+        <motion.div 
+          className="grid md:grid-cols-5 gap-4"
+          variants={containerVariants}
+        >
           {categories.map((cat, idx) => (
-            <div key={idx} className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-all cursor-pointer">
-              <div className="w-auto h-60 flex items-center justify-center mb-3">
+            <motion.div 
+              key={idx} 
+              className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-all cursor-pointer"
+              variants={itemVariants}
+              whileHover={cardHoverVariants.hover}
+            >
+              <motion.div 
+                className="w-auto h-60 flex items-center justify-center mb-3"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <img src={cat.img} alt={cat.name} className="max-h-full object-contain" />
-              </div>
+              </motion.div>
               <span className="text-md font-bold text-center px-2">{cat.name}</span>
-            </div>
+            </motion.div>
           ))}
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* --- Main Content: Trending Products --- */}
-        <div className="lg:col-span-3">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left">Trending Products</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <motion.div 
+          className="lg:col-span-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={containerVariants}
+        >
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold mb-6 text-[#423129] text-center md:text-left"
+            variants={itemVariants}
+          >
+            Trending Products
+          </motion.h2>
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            variants={containerVariants}
+          >
             {trendingProducts.map((product) => (
-              <div key={product.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden relative flex flex-col group shadow-sm">
+              <motion.div 
+                key={product.id} 
+                className="bg-white rounded-xl border border-gray-200 overflow-hidden relative flex flex-col group shadow-sm"
+                variants={itemVariants}
+                whileHover={cardHoverVariants.hover}
+              >
                 <div className="absolute top-0 left-0 bg-[#233F90] text-white text-[10px] px-3 py-1 rounded-br-lg z-10 font-medium">
                   Popular
                 </div>
                 
-                <div className="p-4 h-36 flex items-center justify-center bg-white">
+                <motion.div 
+                  className="p-4 h-36 flex items-center justify-center bg-white"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <img src={product.img} alt={product.name} className="max-h-full object-contain group-hover:scale-105 transition-transform" />
-                </div>
+                </motion.div>
                 
                 <div className="p-4 flex-grow flex flex-col bg-white">
                   <h3 className="text-sm font-semibold text-[#423129]">
@@ -98,42 +185,61 @@ const OurProducts: React.FC = () => {
                   <p className="text-[12px] text-gray-500 mb-2 h-8">{product.subName}</p>
                   
                   {/* Updated Button with WhatsApp functionality */}
-                  <button 
+                  <motion.button 
                     onClick={() => handleWhatsAppClick(product.name, product.subName, product.category)}
                     className="w-full bg-[#6B5E18] text-white py-2 rounded-lg text-sm font-bold transition-colors mt-auto shadow-sm"
+                    whileHover={{ scale: 1.05, backgroundColor: "#5a4e14" }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.2 }}
                   >
                     Add to Cart
-                  </button>
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* --- Sidebar --- */}
-        <div className="lg:col-span-1 space-y-6">
-          <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg md:mt-8">
-            <div className="min-h-[300px] overflow-hidden">
+        <motion.div 
+          className="lg:col-span-1 space-y-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={itemVariants}
+        >
+          <motion.div 
+            className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg md:mt-8"
+            whileHover={cardHoverVariants.hover}
+          >
+            <motion.div 
+              className="min-h-[300px] overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.4 }}
+            >
               <img 
                 src={about} 
                 alt="About Al-Emaar Construction" 
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
             <div className="p-5 text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#423129]">About Al-Emaar</h2>
               <p className="text-gray-600 text-[13px] mb-6">
                 AL-EMAAR Building Solutions is a leading supplier of top-quality building materials. We provide a comprehensive range products to meet all your construction needs.
               </p>
-              <button 
+              <motion.button 
                 onClick={() => navigate('/about')}
                 className="w-full bg-[#6B5E18] text-white py-2 rounded-lg text-sm font-bold transition-colors shadow-sm hover:bg-[#5a4e14]"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2 }}
               >
                 See More in Detail
-              </button>
+              </motion.button>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
