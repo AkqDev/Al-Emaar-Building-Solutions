@@ -11,7 +11,7 @@ import ElectricalItems from './pages/products/ElectricalItems'
 import GypsumBoards from './pages/products/GypsumBoards'
 import PaintsAndAdhesives from './pages/products/PaintsAndAdhesives'
 import PlumbingItems from './pages/products/PlumbingItems'
-import PotaCabins from './pages/products/PotaCabins'
+import PortaCabins from './pages/products/PortaCabins'
 import SafetyProducts from './pages/products/SafetyProducts'
 import ToolsAndEquipments from './pages/products/ToolsAndEquipments'
 import WaterProofingItems from './pages/products/WaterProofingItems'
@@ -30,7 +30,6 @@ import Dcp from './pages/Brands/Dcp'
 import Dewesser from './pages/Brands/Dewesser'
 import Emtop from './pages/Brands/Emtop'
 import Fosroc from './pages/Brands/Fosroc'
-import Gulfmaid from './pages/Brands/Gulfmaid'
 import Hempel from './pages/Brands/Hempel'
 import Jazeera from './pages/Brands/Jazeera'
 import Jotun from './pages/Brands/jotun'
@@ -61,7 +60,7 @@ const App = () => {
         <Route path="/products/gypsum-boards" element={<GypsumBoards />} />
         <Route path="/products/paints-adhesives" element={<PaintsAndAdhesives />} />
         <Route path="/products/plumbing-items" element={<PlumbingItems />} />
-        <Route path="/products/porta-cabins" element={<PotaCabins />} />
+        <Route path="/products/porta-cabins" element={<PortaCabins />} />
         <Route path="/products/safety-products" element={<SafetyProducts />} />
         <Route path="/products/tools-equipments" element={<ToolsAndEquipments />} />
         <Route path="/products/waterproofing-items" element={<WaterProofingItems />} />
@@ -80,7 +79,6 @@ const App = () => {
         <Route path="/dewesser-products" element={<Dewesser />} />
         <Route path="/emtop-products" element={<Emtop />} />
         <Route path="/fosroc-products" element={<Fosroc />} />
-        <Route path="/gulfmaid-products" element={<Gulfmaid />} />
         <Route path="/hempel-products" element={<Hempel />} />
         <Route path="/jazeera-products" element={<Jazeera />} />
         <Route path="/jotun-products" element={<Jotun />} />
