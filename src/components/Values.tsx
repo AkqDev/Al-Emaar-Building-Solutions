@@ -48,7 +48,7 @@ const Values = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };
@@ -65,7 +65,7 @@ const Values = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };
@@ -76,7 +76,7 @@ const Values = () => {
       scaleX: 1,
       transition: {
         duration: 1.2,
-        ease: "easeInOut",
+        ease: [0.4, 0, 0.2, 1] as const,
         delay: 0.8
       }
     }
@@ -152,7 +152,7 @@ const Values = () => {
                 variants={stepVariants}
                 whileHover={{ 
                   y: -10,
-                  transition: { duration: 0.3, ease: "easeOut" }
+                  transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] as const }
                 }}
               >
                 {/* Icon Circle */}
@@ -168,7 +168,7 @@ const Values = () => {
                   transition={{ 
                     duration: 0.6, 
                     delay: index * 0.1 + 0.5,
-                    ease: "easeOut"
+                    ease: [0.4, 0, 0.2, 1] as const
                   }}
                   viewport={{ once: true }}
                 >

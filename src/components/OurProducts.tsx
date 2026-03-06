@@ -83,7 +83,7 @@ const OurProducts: React.FC = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };
@@ -94,7 +94,7 @@ const OurProducts: React.FC = () => {
       scale: 1.02,
       transition: {
         duration: 0.3,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };

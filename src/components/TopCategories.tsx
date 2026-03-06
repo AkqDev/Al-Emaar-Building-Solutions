@@ -48,7 +48,7 @@ const TopCategories: React.FC = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };
@@ -60,7 +60,7 @@ const TopCategories: React.FC = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] as const
       }
     }
   };
@@ -102,7 +102,7 @@ const TopCategories: React.FC = () => {
             whileHover={{ 
               y: -12,
               scale: 1.05,
-              transition: { duration: 0.3, ease: "easeOut" }
+              transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] as const }
             }}
           >
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 transition-transform duration-300">

@@ -13,7 +13,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] as const }}
           className="flex flex-col items-center mb-8"
         >
           <motion.img 
@@ -32,7 +32,7 @@ const Footer = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] as const }}
           >
             Building Solutions Jeddah
           </motion.p>
@@ -43,7 +43,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.3, ease: [0.4, 0, 0.2, 1] as const }}
           className="max-w-4xl text-base md:text-lg text-gray-100 mb-12 leading-relaxed font-medium"
         >
           Al-Emaar Building Solutions is your trusted partner for premium construction materials and 
