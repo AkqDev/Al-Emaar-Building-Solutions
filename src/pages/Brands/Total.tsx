@@ -10,7 +10,7 @@ const Total: React.FC = () => {
     window.open(whatsappUrl, '_blank');
   };
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-sans">
+    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">
