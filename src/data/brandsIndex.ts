@@ -10,10 +10,22 @@ import ArtlifeProducts from './Artlife';
 import DadcoProducts from './Dadco';
 import DewesserProducts from './Dewesser';
 import EmtopProducts from './Emtop';
-import { hempelProducts } from './Hempel';
+import HempelProducts from './Hempel';
 import PedrollaProducts from './Pedrolla';
 import SaafProducts from './saaf';
 import SavetoProducts from './Saveto';
+import BitumatProducts from './Bitumat';
+import CICProducts from './Cic';
+import CMCIProducts from './Cmci';
+import DcpProducts from './Dcp';
+import FosrocProducts from './Fosroc';
+import JazeeraProducts from './Jazeera';
+import JotunProducts from './Jotun';
+import KapciProducts from './Kapci';
+import PattexProducts from './Pattex';
+import SikaProducts from './Sika';
+import TremcoProducts from './Tremco';
+import WeberProducts from './Weber';
 
 export interface BrandInfo {
   id: string;
@@ -98,7 +110,7 @@ export const brandsIndex: BrandInfo[] = [
     id: 'hempel',
     name: 'Hempel',
     path: '/hempel-products',
-    products: hempelProducts
+    products: HempelProducts
   },
   {
     id: 'pedrolla',
@@ -118,83 +130,76 @@ export const brandsIndex: BrandInfo[] = [
     path: '/saveto-products',
     products: SavetoProducts
   },
-  // Add more brands as they become available
   {
     id: 'bitumat',
     name: 'Bitumat',
     path: '/bitumat-products',
-    products: []
+    products: BitumatProducts
   },
   {
     id: 'cic',
     name: 'CIC',
     path: '/cic-products',
-    products: []
+    products: CICProducts
   },
   {
     id: 'cmci',
     name: 'CMCI',
     path: '/cmci-products',
-    products: []
+    products: CMCIProducts
   },
   {
     id: 'dcp',
     name: 'DCP',
     path: '/dcp-products',
-    products: []
+    products: DcpProducts
   },
   {
     id: 'fosroc',
     name: 'Fosroc',
     path: '/fosroc-products',
-    products: []
-  },
-  {
-    id: 'gulfmaid',
-    name: 'Gulfmaid',
-    path: '/gulfmaid-products',
-    products: []
+    products: FosrocProducts
   },
   {
     id: 'jazeera',
     name: 'Jazeera',
     path: '/jazeera-products',
-    products: []
+    products: JazeeraProducts
   },
   {
     id: 'jotun',
     name: 'Jotun',
     path: '/jotun-products',
-    products: []
+    products: JotunProducts
   },
   {
     id: 'kapci',
     name: 'Kapci',
     path: '/kapci-products',
-    products: []
+    products: KapciProducts
   },
   {
     id: 'pattex',
     name: 'Pattex',
     path: '/pattex-products',
-    products: []
+    products: PattexProducts
   },
   {
     id: 'sika',
     name: 'Sika',
     path: '/sika-products',
-    products: []
+    products: SikaProducts
   },
   {
     id: 'tremco',
     name: 'Tremco',
     path: '/tremco-products',
-    products: []
+    products: TremcoProducts
   },
   {
     id: 'weber',
     name: 'Weber',
     path: '/weber-products',
-    products: []
+    products: WeberProducts
   }
 ];
