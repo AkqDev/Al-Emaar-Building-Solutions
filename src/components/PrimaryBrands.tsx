@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 // Imports
-import gulfmaid from '../assets/PrimaryBrands/gulfmaid.png';
 import brand777 from '../assets/PrimaryBrands/777.png'; 
 import hempel from '../assets/PrimaryBrands/hempel.png';
 import agm from '../assets/PrimaryBrands/agm.png';
@@ -21,7 +20,6 @@ interface BrandLogo {
 
 const PrimaryBrands: React.FC = () => {
   const logos: BrandLogo[] = [
-    { image: gulfmaid, name: 'Gulfmaid', route: '/gulfmaid-products' },
     { image: brand777, name: '777', route: '/777-products' },
     { image: hempel, name: 'Hempel', route: '/hempel-products' },
     { image: agm, name: 'AGM', route: '/agm-products' },

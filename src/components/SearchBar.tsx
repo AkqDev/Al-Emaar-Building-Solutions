@@ -10,7 +10,7 @@ interface SearchBarProps {
 }
 
 interface SearchResult {
-  type: 'category' | 'brand' | 'product';
+  type: 'category' | 'brand' | 'product' | 'page';
   name: string;
   path: string;
   brandName?: string;
@@ -35,10 +35,79 @@ const SearchBar = ({ className = '', onResultClick }: SearchBarProps) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Get all results when search is empty (for "See All" view)
+  const getAllResults = (): SearchResult[] => {
+    const results: SearchResult[] = [];
+
+    // Add main pages
+    results.push(
+      {
+        type: 'page',
+        name: 'Home',
+        path: '/',
+        description: 'Main homepage'
+      },
+      {
+        type: 'page',
+        name: 'About Company',
+        path: '/about',
+        description: 'Learn about our company'
+      }
+    );
+
+    // Add all categories
+    productCategories.forEach(cat => {
+      results.push({
+        type: 'category',
+        name: cat.name,
+        path: cat.path
+      });
+    });
+
+    // Add all brands
+    brandsIndex.forEach(brand => {
+      results.push({
+        type: 'brand',
+        name: brand.name,
+        path: brand.path
+      });
+
+      // Add all products from each brand
+      brand.products.forEach(product => {
+        results.push({
+          type: 'product',
+          name: product.name,
+          path: brand.path,
+          brandName: brand.name,
+          description: product.description
+        });
+      });
+    });
+
+    return results;
+  };
+
   const searchResults: SearchResult[] = searchQuery.trim() 
     ? (() => {
         const query = searchQuery.toLowerCase();
         const results: SearchResult[] = [];
+
+        // Search in pages
+        const pages = [
+          { name: 'Home', path: '/', description: 'Main homepage' },
+          { name: 'About Company', path: '/about', description: 'Learn about our company' }
+        ];
+
+        pages.forEach(page => {
+          if (page.name.toLowerCase().includes(query)) {
+            results.push({
+              type: 'page',
+              name: page.name,
+              path: page.path,
+              description: page.description
+            });
+          }
+        });
 
         // Search in product categories
         productCategories.forEach(cat => {
@@ -65,7 +134,8 @@ const SearchBar = ({ className = '', onResultClick }: SearchBarProps) => {
 
           // Search in brand products
           brand.products.forEach(product => {
-            if (product.name.toLowerCase().includes(query)) {
+            if (product.name.toLowerCase().includes(query) || 
+                product.description.toLowerCase().includes(query)) {
               results.push({
                 type: 'product',
                 name: product.name,
@@ -79,7 +149,7 @@ const SearchBar = ({ className = '', onResultClick }: SearchBarProps) => {
 
         return results;
       })()
-    : [];
+    : getAllResults();
 
   return (
     <div ref={searchRef} className={`relative ${className}`}>
@@ -112,8 +182,25 @@ const SearchBar = ({ className = '', onResultClick }: SearchBarProps) => {
       </div>
 
       {/* Search Results Dropdown */}
-      {showResults && searchQuery && searchResults.length > 0 && (
+      {showResults && searchResults.length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-lg shadow-xl z-50 max-h-96 overflow-y-auto">
+          {!searchQuery && (
+            <div className="p-3 bg-slate-50 border-b border-slate-200 sticky top-0">
+              <p className="text-sm font-semibold text-slate-700">
+                Browse All ({searchResults.length} items)
+              </p>
+              <p className="text-xs text-slate-500 mt-0.5">
+                Pages • Categories • Brands • Products
+              </p>
+            </div>
+          )}
+          {searchQuery && (
+            <div className="p-3 bg-slate-50 border-b border-slate-200 sticky top-0">
+              <p className="text-sm font-semibold text-slate-700">
+                Search Results ({searchResults.length} found)
+              </p>
+            </div>
+          )}
           {searchResults.map((result, index) => (
             <div key={`${result.type}-${index}`} className="p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
               <button 
@@ -131,9 +218,13 @@ const SearchBar = ({ className = '', onResultClick }: SearchBarProps) => {
                       ? 'bg-blue-100 text-blue-700' 
                       : result.type === 'brand'
                       ? 'bg-purple-100 text-purple-700'
-                      : 'bg-green-100 text-green-700'
+                      : result.type === 'product'
+                      ? 'bg-green-100 text-green-700'
+                      : 'bg-orange-100 text-orange-700'
                   }`}>
-                    {result.type === 'category' ? 'Category' : result.type === 'brand' ? 'Brand' : 'Product'}
+                    {result.type === 'category' ? 'Category' : 
+                     result.type === 'brand' ? 'Brand' : 
+                     result.type === 'product' ? 'Product' : 'Page'}
                   </span>
                   <div className="flex-1">
                     <div className="font-semibold text-[#292A87] hover:underline">
