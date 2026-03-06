@@ -1,6 +1,13 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import FosamProducts from '../../data/fosroc';
+import FosamProducts from '../../data/Fosroc';
+
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  productImg: string;
+}
 
 const Fosroc: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {
@@ -29,7 +36,7 @@ const Fosroc: React.FC = () => {
 
       {/* Grid */}
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        {FosamProducts.map((product) => (
+        {FosamProducts.map((product: Product) => (
           <div key={product.id} className="bg-white rounded-3xl p-8 transition-all duration-300 border border-gray-100 hover:shadow-xl group">
             
             {/* Image Section */}
