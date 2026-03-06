@@ -34,7 +34,7 @@ const Hero = () => {
   const slides = isMobile ? mobileSlides : desktopSlides;
 
   return (
-    <div className="hero-container font-poppins -mt-0 relative z-10">
+    <div className="hero-container font-poppins mt-4 md:mt-0 relative z-10">
       <Carousel 
         autoplay
         autoplaySpeed={5000}
