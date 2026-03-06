@@ -121,8 +121,15 @@ const products: Product[] = [
 ];
 
 const ElectricalItems: React.FC = () => {
+  const handleWhatsAppClick = (productName: string) => {
+    const message = `I want to buy the ${productName} from Electrical Items`;
+    const whatsappNumber = '966544837829';
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-sans">
+    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">
@@ -163,7 +170,10 @@ const ElectricalItems: React.FC = () => {
                 </p>
               </div>
               
-              <button className="bg-gray-50 p-4 rounded-2xl shadow-sm border border-gray-100 hover:bg-black hover:text-white transition-all active:scale-95 group/btn flex-shrink-0 mt-1">
+              <button 
+                onClick={() => handleWhatsAppClick(product.name)}
+                className="bg-gray-50 p-4 rounded-2xl shadow-sm border border-gray-100 hover:bg-black hover:text-white transition-all active:scale-95 group/btn flex-shrink-0 mt-1"
+              >
                 <ArrowRight size={24} strokeWidth={2.5} className="transition-transform group-hover/btn:translate-x-1" />
               </button>
             </div>
