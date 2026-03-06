@@ -98,11 +98,11 @@ const Home = () => {
         </motion.div>
         
         <motion.div variants={sectionVariants}>
-          <SEOContent/>
-        </motion.div>
-        
-        <motion.div variants={sectionVariants}>
           <Values/>
+        </motion.div>
+
+         <motion.div variants={sectionVariants}>
+          <SEOContent/>
         </motion.div>
         
         <motion.div variants={sectionVariants}>

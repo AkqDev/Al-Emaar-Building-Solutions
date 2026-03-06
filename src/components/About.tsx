@@ -43,7 +43,7 @@ const About = () => {
 
   return (
     <section className="bg-white py-16 px-6 md:px-12 lg:px-24">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1100px] mx-auto">
         {/* --- TOP SECTION: Introduction & Two Images --- */}
         <motion.div 
           className="flex flex-col lg:flex-row items-center gap-12 mb-24"
