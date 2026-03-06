@@ -132,7 +132,7 @@ const Navbar = () => {
 
       {/* --- MOBILE FULL-WIDTH SIDEBAR (UNCHANGED) --- */}
       <div className={`
-        fixed inset-0 h-screen w-full bg-white transform transition-transform duration-500 ease-in-out lg:hidden
+        fixed inset-0 h-screen w-full bg-white transform transition-transform duration-500 ease-in-out lg:hidden z-50
         ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
       `}>
         <div className="flex flex-col h-full overflow-hidden">
