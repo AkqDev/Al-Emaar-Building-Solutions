@@ -7,14 +7,6 @@ import mobileSlider1 from '../assets/Sliders/Mobile/Slider1.jpeg';
 import mobileSlider2 from '../assets/Sliders/Mobile/Slider2.jpeg';
 import mobileSlider3 from '../assets/Sliders/Mobile/Slider3.jpeg';
 
-const contentStyle: React.CSSProperties = {
-  margin: 0,
-  height: '300px',
-  width: '100%',
-  objectFit: 'cover',
-  display: 'block',
-};
-
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -32,6 +24,14 @@ const Hero = () => {
   const desktopSlides = [slider1, slider2, slider3];
   const mobileSlides = [mobileSlider1, mobileSlider2, mobileSlider3];
   const slides = isMobile ? mobileSlides : desktopSlides;
+
+  const contentStyle: React.CSSProperties = {
+    margin: 0,
+    height: isMobile ? '500px' : '300px',
+    width: '100%',
+    objectFit: 'cover',
+    display: 'block',
+  };
 
   return (
     <div className="hero-container font-poppins -mt-0 relative z-10">
