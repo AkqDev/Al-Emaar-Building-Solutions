@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import about from '../assets/about.png'
 import gypsum from '../assets/gypsum.png'
 import paints from '../assets/paints.png'
@@ -225,18 +226,19 @@ const OurProducts: React.FC = () => {
             </motion.div>
             <div className="p-5 text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#423129]">About Al-Emaar</h2>
-              <p className="text-gray-600 text-[13px] mb-6">
+              <p className="text-gray-600 text-[13px] mb-6 flex items-center justify-center gap-2">
                 AL-EMAAR Building Solutions is a leading supplier of top-quality building materials. We provide a comprehensive range products to meet all your construction needs.
+                <motion.button
+                  onClick={() => navigate('/about')}
+                  className="inline-flex items-center justify-center w-8 h-8 bg-[#6B5E18] text-white rounded-full hover:bg-[#5a4e14] transition-colors flex-shrink-0"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.2 }}
+                  aria-label="Go to About page"
+                >
+                  <ArrowRight size={18} />
+                </motion.button>
               </p>
-              <motion.button 
-                onClick={() => navigate('/about')}
-                className="w-full bg-[#6B5E18] text-white py-2 rounded-lg text-sm font-bold transition-colors shadow-sm hover:bg-[#5a4e14]"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
-              >
-                See More in Detail
-              </motion.button>
             </div>
           </motion.div>
         </motion.div>
