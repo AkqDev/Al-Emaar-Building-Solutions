@@ -110,7 +110,7 @@ const Values = () => {
           
           <div className="pt-4 border-t border-gray-200 px-10">
             <motion.h2 
-              className="text-5xl md:text-8xl font-serif text-[#012433] tracking-tight"
+              className="text-3xl md:text-8xl font-serif text-[#012433] tracking-tight"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
