@@ -21,7 +21,7 @@ import roll from '../assets/roll.png'
 // --- Data Definitions ---
 const categories = [
   { name: 'Water Proofing Items', img:water },
-  { name: 'Paints & Adhesives', img:paints },
+  { name: 'Paints', img:paints },
   { name: 'Gypsum Board', img:gypsum },
   { name: 'Tools & Equipment', img:tools},
   { name: 'Safety Products', img:safety},
@@ -29,7 +29,7 @@ const categories = [
 
 const trendingProducts = [
   { id: 1, name: 'Comnix', subName: 'Waterproofing Membrane Roll', category: 'Water Proofing', img:roll  },
-  { id: 2, name: 'Jotun Jotashield', subName: 'Exterior Paint 20L', category: 'Paints & Adhesives', img: jotun },
+  { id: 2, name: 'Jotun Jotashield', subName: 'Exterior Paint 20L', category: 'Paints', img: jotun },
   { id: 3, name: 'Elephant Gypsum', subName: 'Board - 8ft x 4ft', category: 'Gypsum Board', img:gypsum },
   { id: 4, name: 'SDS Plus Rotary', subName: 'Hammer Drill', category: 'Tools & Equipment', img:drill },
   { id: 5, name: 'UPVC Pipe &', subName: 'Fittings Asst Pack', category: 'Plumbing', img:upvc },

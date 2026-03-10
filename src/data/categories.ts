@@ -17,7 +17,7 @@ export const productCategories = [
   },
   {
     id: 'paints-adhesives',
-    name: 'Paints And Adhesives',
+    name: 'Paints',
     path: '/products/paints-adhesives'
   },
   {

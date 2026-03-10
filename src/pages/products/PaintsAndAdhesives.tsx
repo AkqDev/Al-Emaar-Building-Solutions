@@ -57,7 +57,7 @@ const products: Product[] = [
 
 const PaintsAndAdhesives: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {
-    const message = `I want to buy the ${productName} from Paints & Adhesives`;
+    const message = `I want to buy the ${productName} from Paints`;
     const whatsappNumber = '966544837829';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

@@ -11,7 +11,7 @@ import water from '../assets/water.png'
 const categories = [
   { id: 1, title: 'Water Proofing', image:water, route: '/products/waterproofing-items' },
   { id: 2, title: 'Lighting & Electrical', image:light, route: '/products/electrical-items' },
-  { id: 3, title: 'Paints & Adhesives', image:paints, route: '/products/paints-adhesives' },
+  { id: 3, title: 'Paints', image:paints, route: '/products/paints-adhesives' },
   { id: 4, title: 'Construction Materials', image:construction, route: '/products/construction-materials' },
   { id: 5, title: 'Safety Products', image:safety, route: '/products/safety-products' },
   { id: 6, title: 'Plumbing Items', image:plumbing, route: '/products/plumbing-items' },
