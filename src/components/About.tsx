@@ -117,7 +117,7 @@ const About = () => {
           Meet Our Leadership Team
         </motion.h2>
 
-        {/* --- SECTION 1: Managing Director --- */}
+        {/* --- SECTION 1: CEO --- */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -131,51 +131,6 @@ const About = () => {
             >
               <div className="h-[400px] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
                 <img
-                  src={ali}
-                  alt="Ali Ur Rahman"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </motion.div>
-
-            {/* Mobile: Content Second */}
-            <motion.div 
-              className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left"
-              variants={fadeInLeft}
-            >
-              <h3 className="text-3xl font-bold font-['Poppins'] text-[#1a1a1a] mb-4">
-                Ali Ur Rahman
-              </h3>
-              <p className="text-sm text-red-600 font-semibold mb-4 uppercase tracking-wide">
-                Managing Director
-              </p>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Managing Director of Al Emaar Alreeq Trading Est., Ali Ur Rahman
-                brings over a decade of experience in the construction materials
-                industry. With a background in civil engineering and a passion for
-                quality, Ali has been instrumental in building strong
-                relationships with suppliers and clients alike, ensuring that Al
-                Emaar Alreeq delivers top-notch products and exceptional service
-                across Saudi Arabia.
-              </p>
-            </motion.div>
-          </div>
-        </motion.div>
-
-        {/* --- SECTION 2: CEO --- */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Mobile: Image First */}
-            <motion.div 
-              className="w-full lg:w-1/2 order-1"
-              variants={scaleIn}
-            >
-              <div className="h-[400px] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
-                <img
                   src={nadeem}
                   alt="Nadeem Farooq Khan"
                   className="w-full h-full object-contain"
@@ -185,8 +140,8 @@ const About = () => {
 
             {/* Mobile: Content Second */}
             <motion.div 
-              className="w-full lg:w-1/2 order-2 text-center lg:text-left"
-              variants={fadeInRight}
+              className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left"
+              variants={fadeInLeft}
             >
               <h3 className="text-3xl font-bold font-['Poppins'] text-[#1a1a1a] mb-4">
                 Nadeem Farooq Khan
@@ -202,6 +157,52 @@ const About = () => {
                 pivotal role in expanding the company's footprint across Saudi
                 Arabia, forging key partnerships, and driving growth in the
                 competitive construction materials sector.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* --- SECTION 2: Marketing Manager --- */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Mobile: Image First */}
+            <motion.div 
+              className="w-full lg:w-1/2 order-1"
+              variants={scaleIn}
+            >
+              <div className="h-[400px] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
+                <img
+                  src={ali}
+                  alt="Ali Ur Rahman"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </motion.div>
+
+            {/* Mobile: Content Second */}
+            <motion.div 
+              className="w-full lg:w-1/2 order-2 text-center lg:text-left"
+              variants={fadeInRight}
+            >
+              <h3 className="text-3xl font-bold font-['Poppins'] text-[#1a1a1a] mb-4">
+                Ali Ur Rahman
+              </h3>
+              <p className="text-sm text-red-600 font-semibold mb-4 uppercase tracking-wide">
+                Marketing Manager
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Marketing Manager at Al Emaar Alreeq Trading Est., Ali Ur Rahman 
+                leads the company's marketing initiatives and brand development 
+                strategies. With expertise in market analysis and customer engagement, 
+                Ali focuses on building strong client relationships and expanding 
+                market presence across Saudi Arabia. His innovative approach to 
+                marketing and deep understanding of the construction materials sector 
+                has been key in positioning Al Emaar Alreeq as a trusted name in the 
+                industry, driving customer satisfaction and business growth.
               </p>
             </motion.div>
           </div>
