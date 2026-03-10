@@ -117,7 +117,7 @@ const Navbar = () => {
             <div className="h-6 w-[1px] bg-slate-200 mx-2"></div>
 
             {/* Quick access to first few categories (matches image labels) */}
-            {productCategories.slice(0, 5).map((cat) => (
+            {productCategories.slice(0, 6).map((cat) => (
               <Link 
                 key={cat.id}
                 to={cat.path}
