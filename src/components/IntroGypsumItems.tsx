@@ -10,7 +10,7 @@ const IntroGypsumItems = () => {
     visible: { 
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.7, ease: "easeInOut" }
+      transition: { duration: 0.7, ease: "easeInOut" as const }
     }
   };
 
@@ -19,7 +19,7 @@ const IntroGypsumItems = () => {
     visible: { 
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.7, ease: "easeInOut" }
+      transition: { duration: 0.7, ease: "easeInOut" as const }
     }
   };
 

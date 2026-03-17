@@ -11,12 +11,12 @@ import totalLogo from '../assets/ToolsBrands/total.png';
 const IntroTools = () => {
   const fadeInLeft = {
     hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" as const } }
   };
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" as const } }
   };
 
   return (
