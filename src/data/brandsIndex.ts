@@ -26,6 +26,11 @@ import PattexProducts from './Pattex';
 import SikaProducts from './Sika';
 import TremcoProducts from './Tremco';
 import WeberProducts from './Weber';
+import GroheProducts from './grohe';
+import JeddahPaintsProducts from './JeddahPaints';
+import KhayaatProducts from './khayaat';
+import MadaProducts from './mada';
+import SaudiCeramicsProducts from './saudiCeramics';
 
 export interface BrandInfo {
   id: string;
@@ -201,5 +206,35 @@ export const brandsIndex: BrandInfo[] = [
     name: 'Weber',
     path: '/weber-products',
     products: WeberProducts
+  },
+  {
+    id: 'grohe',
+    name: 'Grohe',
+    path: '/grohe-products',
+    products: GroheProducts
+  },
+  {
+    id: 'jeddah-paints',
+    name: 'Jeddah Paints',
+    path: '/jeddah-paints-products',
+    products: JeddahPaintsProducts
+  },
+  {
+    id: 'khayaat',
+    name: 'Khayaat',
+    path: '/khayaat-products',
+    products: KhayaatProducts
+  },
+  {
+    id: 'mada',
+    name: 'Mada',
+    path: '/mada-products',
+    products: MadaProducts
+  },
+  {
+    id: 'saudi-ceramics',
+    name: 'Saudi Ceramics',
+    path: '/saudi-ceramics-products',
+    products: SaudiCeramicsProducts
   }
 ];

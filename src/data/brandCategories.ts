@@ -8,6 +8,11 @@ import saveto from '../assets/PrimaryBrands/saveto.svg';
 import seven from '../assets/PrimaryBrands/777.png';
 import agm from '../assets/PrimaryBrands/agm.png';
 import hempel from '../assets/PrimaryBrands/hempel.png';
+import grohe from '../assets/PrimaryBrands/grohe.png';
+import jeddah from '../assets/PrimaryBrands/Jeddah.png';
+import khayaat from '../assets/PrimaryBrands/khayaat.png';
+import mada from '../assets/PrimaryBrands/mada.png';
+import saudiCeramics from '../assets/PrimaryBrands/saudiCeramics.png';
 
 // Construction Brands
 import adhelant from '../assets/ConstructionBrands/adhelant.png';
@@ -85,6 +90,13 @@ export const brandCategoriesData: BrandCategory[] = [
         logo: hempel,
         path: '/hempel-products',
         description: 'Road marking paints and wall putty'
+      },
+      {
+        id: 'jeddah-paints',
+        name: 'Jeddah Paints',
+        logo: jeddah,
+        path: '/jeddah-paints-products',
+        description: 'Architectural and decorative paints including Paramatti, Buksan, and DECO ranges'
       }
     ]
   },
@@ -210,7 +222,7 @@ export const brandCategoriesData: BrandCategory[] = [
   {
     id: 'construction-materials-brands',
     name: 'Construction Materials & Boards',
-    keywords: ['construction', 'materials', 'boards', 'gypsum', 'insulation', 'panels', 'polystyrene', 'building materials'],
+    keywords: ['construction', 'materials', 'boards', 'gypsum', 'insulation', 'panels', 'polystyrene', 'building materials', 'plasterboard', 'gypsum board', 'fire rated', 'moisture resistant'],
     brands: [
       {
         id: 'saabit',
@@ -239,6 +251,27 @@ export const brandCategoriesData: BrandCategory[] = [
         logo: dcp,
         path: '/dcp-products',
         description: 'Construction materials'
+      },
+      {
+        id: 'khayaat',
+        name: 'Khayaat',
+        logo: khayaat,
+        path: '/khayaat-products',
+        description: 'Gypsum boards - regular, moisture resistant, fire rated, and impact boards'
+      },
+      {
+        id: 'mada',
+        name: 'Mada',
+        logo: mada,
+        path: '/mada-products',
+        description: 'Plasterboards - acoustic, fire resistant, moisture resistant, and cement boards'
+      },
+      {
+        id: 'saudi-ceramics',
+        name: 'Saudi Ceramics',
+        logo: saudiCeramics,
+        path: '/saudi-ceramics-products',
+        description: 'Ceramic tiles and hollow/load bearing bricks for construction'
       }
     ]
   },
@@ -267,6 +300,20 @@ export const brandCategoriesData: BrandCategory[] = [
         logo: saaf,
         path: '/saaf-products',
         description: 'Construction products'
+      }
+    ]
+  },
+  {
+    id: 'plumbing-brands',
+    name: 'Plumbing Brands',
+    keywords: ['plumbing', 'bathroom', 'shower', 'faucet', 'mixer', 'tap', 'basin', 'toilet', 'wc', 'sanitary', 'pipe', 'cistern', 'urinal', 'bath'],
+    brands: [
+      {
+        id: 'grohe',
+        name: 'Grohe',
+        logo: grohe,
+        path: '/grohe-products',
+        description: 'Premium bathroom fittings - shower mixers, basin mixers, WC, and accessories'
       }
     ]
   }

@@ -1,14 +1,14 @@
 // Product Categories Data
 export const productCategories = [
   {
+    id: 'waterproofing-items',
+    name: 'Waterproofing Items',
+    path: '/products/waterproofing-items'
+  },
+  {
     id: 'construction-materials',
     name: 'Construction Materials',
     path: '/products/construction-materials'
-  },
-  {
-    id: 'electrical-items',
-    name: 'Electrical Items',
-    path: '/products/electrical-items'
   },
   {
     id: 'gypsum-boards',
@@ -19,6 +19,11 @@ export const productCategories = [
     id: 'paints-adhesives',
     name: 'Paints',
     path: '/products/paints-adhesives'
+  },
+  {
+    id: 'electrical-items',
+    name: 'Electrical Items',
+    path: '/products/electrical-items'
   },
   {
     id: 'plumbing-items',
@@ -40,11 +45,6 @@ export const productCategories = [
     name: 'Tools And Equipments',
     path: '/products/tools-equipments'
   },
-  {
-    id: 'waterproofing-items',
-    name: 'Waterproofing Items',
-    path: '/products/waterproofing-items'
-  }
 ];
 
 // Brand Categories Data
