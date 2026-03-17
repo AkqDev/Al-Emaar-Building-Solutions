@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import AboutCompany from './pages/AboutCompany'
 
@@ -30,10 +31,13 @@ import Dcp from './pages/Brands/Dcp'
 import Dewesser from './pages/Brands/Dewesser'
 import Emtop from './pages/Brands/Emtop'
 import Fosroc from './pages/Brands/Fosroc'
+import Grohe from './pages/Brands/Grohe'
 import Hempel from './pages/Brands/Hempel'
 import Jazeera from './pages/Brands/Jazeera'
 import Jotun from './pages/Brands/jotun'
 import Kapci from './pages/Brands/Kapci'
+import Khayaat from './pages/Brands/Khayaat'
+import Mada from './pages/Brands/Mada'
 import Makita from './pages/Brands/Makita'
 import Pattex from './pages/Brands/Pattex'
 import Pedrolla from './pages/Brands/Pedrolla'
@@ -44,11 +48,17 @@ import Sika from './pages/Brands/Sika'
 import Total from './pages/Brands/Total'
 import Tremco from './pages/Brands/Tremco'
 import Weber from './pages/Brands/Weber'
+import JeddahPaints from './pages/Brands/JeddahPaints'
+import SaudiCeramics from './pages/Brands/SaudiCeramics'
+import Alfanar from './pages/Brands/Alfanar'
+import Bahra from './pages/Brands/Bahra'
+import Orient from './pages/Brands/Orient'
 
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -79,10 +89,13 @@ const App = () => {
         <Route path="/dewesser-products" element={<Dewesser />} />
         <Route path="/emtop-products" element={<Emtop />} />
         <Route path="/fosroc-products" element={<Fosroc />} />
+        <Route path="/grohe-products" element={<Grohe />} />
         <Route path="/hempel-products" element={<Hempel />} />
         <Route path="/jazeera-products" element={<Jazeera />} />
         <Route path="/jotun-products" element={<Jotun />} />
         <Route path="/kapci-products" element={<Kapci />} />
+        <Route path="/khayaat-products" element={<Khayaat />} />
+        <Route path="/mada-products" element={<Mada />} />
         <Route path="/makita-products" element={<Makita />} />
         <Route path="/pattex-products" element={<Pattex />} />
         <Route path="/pedrolla-products" element={<Pedrolla />} />
@@ -93,6 +106,11 @@ const App = () => {
         <Route path="/total-products" element={<Total />} />
         <Route path="/tremco-products" element={<Tremco />} />
         <Route path="/weber-products" element={<Weber />} />
+        <Route path="/jeddah-products" element={<JeddahPaints />} />
+        <Route path="/saudiCeramics-products" element={<SaudiCeramics />} />
+        <Route path="/alfanar-products" element={<Alfanar />} />
+        <Route path="/bahra-products" element={<Bahra />} />
+        <Route path="/orient-products" element={<Orient />} />
       </Routes>
       <Footer />
       <WhatsAppButton />

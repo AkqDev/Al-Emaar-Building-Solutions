@@ -18,3 +18,13 @@ html {
 .text-linear-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
