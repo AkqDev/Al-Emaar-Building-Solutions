@@ -11,7 +11,7 @@ const IntroElectricItems = () => {
     visible: { 
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.7, ease: "easeInOut" }
     }
   };
 
@@ -20,7 +20,7 @@ const IntroElectricItems = () => {
     visible: { 
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.7, ease: "easeInOut" }
     }
   };
 
@@ -54,7 +54,7 @@ const IntroElectricItems = () => {
               <h3 className="text-xl md:text-3xl font-poppins font-black text-[#6B5E18] mt-6">
                 Explore Our Brands
               </h3>
-              <div className="grid grid-cols-4 gap-4 mt-4">
+              <div className="grid grid-cols-4 gap-4 mt-4 mb-10 md:mb-0">
                 <Link to="/alfanar-products">
                   <img src={alfanarLogo} alt="Alfanar" className="h-23 w-57 p-2 object-contain rounded-xl border border-gray-100 shadow-md hover:scale-105 transition-transform bg-gray-300" />
                 </Link>

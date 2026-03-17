@@ -12,12 +12,12 @@ import jeddahLogo from '../assets/PrimaryBrands/Jeddah.png';
 const IntroPaintItems = () => {
   const fadeInLeft = {
     hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   const brands = [
@@ -56,7 +56,7 @@ const IntroPaintItems = () => {
               <h3 className="text-xl md:text-3xl font-poppins font-black text-[#6B5E18] mt-6">
                 Explore Our Brands
               </h3>
-              <div className="grid grid-cols-4 gap-4 mt-4">
+              <div className="grid grid-cols-4 gap-4 mt-4 mb-10 md:mb-0">
                 {brands.map((brand) => (
                   <Link to={brand.route} key={brand.alt}>
                     <img

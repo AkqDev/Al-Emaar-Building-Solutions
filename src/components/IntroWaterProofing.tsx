@@ -14,12 +14,12 @@ import pattexLogo from '../assets/ConstructionBrands/pattex.png';
 const IntroWaterProofing = () => {
   const fadeInLeft = {
     hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   return (
@@ -45,7 +45,7 @@ const IntroWaterProofing = () => {
               <h3 className="text-xl md:text-4xl font-poppins font-black text-[#6B5E18] mt-6">
                 Explore Our Brands
               </h3>
-              <div className="grid grid-cols-4 gap-4 mt-4 justify-center lg:justify-start">
+              <div className="grid grid-cols-4 gap-4 mt-4 justify-center lg:justify-start mb-10 md:mb-0">
                 <Link to="/dcp-products">
                   <img src={dcpLogo} alt="DCP" className="h-23 w-57 p-2 object-contain rounded-xl border border-gray-100 shadow-md hover:scale-105 transition-transform bg-gray-300" />
                 </Link>

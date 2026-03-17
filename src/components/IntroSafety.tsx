@@ -4,12 +4,12 @@ import SafetyImg from '../assets/SafetyImg.png';
 const IntroSafety = () => {
   const fadeInLeft = {
     hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 40 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeInOut" } }
   };
 
   return (
