@@ -11,6 +11,10 @@ import weber from '../assets/PrimaryBrands/weber.png';
 import jazeera from '../assets/PrimaryBrands/jazeera.svg';
 import jotun from '../assets/PrimaryBrands/jotun.svg';
 import saveto from '../assets/PrimaryBrands/saveto.svg';
+import khayaat from '../assets/PrimaryBrands/khayaat.png';
+import mada from '../assets/PrimaryBrands/mada.png';
+import grohe from '../assets/PrimaryBrands/grohe.png';
+import jeddah from '../assets/PrimaryBrands/Jeddah.png';
 
 interface BrandLogo {
   image: string;
@@ -28,6 +32,10 @@ const PrimaryBrands: React.FC = () => {
     { image: jazeera, name: 'Jazeera', route: '/jazeera-products' },
     { image: jotun, name: 'Jotun', route: '/jotun-products' },
     { image: saveto, name: 'Saveto', route: '/saveto-products' },
+    { image: khayaat, name: 'Khayaat', route: '/khayaat-products' },
+    { image: mada, name: 'Mada', route: '/mada-products' },
+    { image: grohe, name: 'Grohe', route: '/grohe-products' },
+    { image: jeddah, name: 'Jeddah', route: '/jeddah-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
@@ -75,7 +83,7 @@ const PrimaryBrands: React.FC = () => {
                 }}
                 className="group relative cursor-pointer"
               >
-                <div className="relative w-full aspect-[5/2] bg-white/15 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
+                <div className="relative w-full aspect-[5/2] bg-gray-800 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
                   <img 
                     src={brand.image} 
                     alt={brand.name} 

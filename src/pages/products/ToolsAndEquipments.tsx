@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroTools from '../../components/IntroTools'
+
 // Imports
 import CordlessDrill from '../../assets/ToolsAndEquipments/CordlessDrill.png';
 import Cutter from '../../assets/ToolsAndEquipments/Cutter.png';
@@ -19,6 +21,12 @@ import PowerTools from '../../assets/ToolsAndEquipments/PowerTools.png';
 import TapeMeasure from '../../assets/ToolsAndEquipments/TapeMeasure.png';
 import ToolKit from '../../assets/ToolsAndEquipments/ToolKit.png';
 import WrenchAdj from '../../assets/ToolsAndEquipments/WrenchAdj.png';
+import AirGun from '../../assets/ToolsAndEquipments/AirGun.png';
+import disc from '../../assets/ToolsAndEquipments/disc.png';
+import bitset from '../../assets/ToolsAndEquipments/bitset.png';
+import hammer from '../../assets/ToolsAndEquipments/hammer.png';
+import spirit from '../../assets/ToolsAndEquipments/spirit.png';
+import silicon from '../../assets/ToolsAndEquipments/silicon.png';
 
 interface Product {
   id: number;
@@ -29,18 +37,18 @@ interface Product {
 
 const products: Product[] = [
   { 
-    id: 1, 
+    id: 1,
     name: "Hand Tools", 
     description: "Essential precision tools including wrenches, hammers, and screwdrivers for everyday manual tasks.", 
     image: HandTools 
   },
-  { 
+  {
     id: 2, 
     name: "Power Tools", 
     description: "High-performance electric equipment designed to increase efficiency and precision on the job site.", 
     image: PowerTools 
   },
-  { 
+  {
     id: 3, 
     name: "Drill Machines", 
     description: "Versatile impact and rotary drills capable of penetrating concrete, metal, and wood with ease.", 
@@ -114,7 +122,7 @@ const products: Product[] = [
   },
   { 
     id: 15, 
-    name: "Tape Measure", 
+    name: "Measuring Tape", 
     description: "Retractable measuring tape with clear markings and durable casing for accurate measurements.", 
     image: TapeMeasure 
   },
@@ -127,8 +135,44 @@ const products: Product[] = [
   { 
     id: 17, 
     name: "Adjustable Wrench", 
-    description: "Chrome-plated adjustable wrench with wide jaw capacity for tightening and loosening various bolt sizes.", 
+    description: "Chrome-plated adjustable wrench with wide jaw capacity for tightening and     loosening various bolt sizes.", 
     image: WrenchAdj 
+  },
+  { 
+    id: 18, 
+    name: "16MM AIR GUN EMTOP FOR COMPRESSOR", 
+    description: "Professional 16mm EMTOP air gun designed for compressor systems, ideal for cleaning and blowing applications.", 
+    image: AirGun 
+  },
+  { 
+    id: 19, 
+    name: "Dewesser Metal Cutting Disc", 
+    description: "High-quality Dewesser metal cutting disc with reinforced construction for efficient cutting of steel and metal.", 
+    image: disc 
+  },
+  { 
+    id: 20, 
+    name: "Bosch 105Pcs Premium X-Line Drill & Screwdriver Bits Set", 
+    description: "Comprehensive Bosch X-Line set with 105 pieces including drill bits, screwdriver bits, and accessories for all drilling needs.", 
+    image: bitset 
+  },
+  { 
+    id: 21, 
+    name: "Hammer", 
+    description: "Durable claw hammer with ergonomic handle for driving nails and general construction tasks.", 
+    image: hammer 
+  },
+  { 
+    id: 22, 
+    name: "Spirit Level Alignment Tool", 
+    description: "Precision spirit level with multiple vials for accurate horizontal and vertical alignment in construction projects.", 
+    image: spirit
+  },
+  { 
+    id: 23, 
+    name: "Silicone Gun Sealant Applicator", 
+    description: "Heavy-duty caulking gun for smooth and controlled application of silicone sealants and adhesives.", 
+    image: silicon 
   },
 ];
 
@@ -142,6 +186,7 @@ const ToolsAndEquipments: React.FC = () => {
 
   return (
     <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroTools/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

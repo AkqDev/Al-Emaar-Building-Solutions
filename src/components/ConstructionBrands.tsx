@@ -83,7 +83,7 @@ const ConstructionBrands: React.FC = () => {
                 }}
                 className="group relative cursor-pointer"
               >
-                <div className="relative w-full aspect-[5/2] bg-white/15 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
+                <div className="relative w-full aspect-[5/2] bg-gray-800 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
                   <img 
                     src={brand.image} 
                     alt={brand.name} 

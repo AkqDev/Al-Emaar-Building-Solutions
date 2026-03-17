@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroPlumbingItems from '../../components/IntroPlumbingItems'
+
 // Imports
 import BidetSprayer from '../../assets/PlumbingItems/BidetSprayer.png';
 import LadderMulti from '../../assets/PlumbingItems/LadderMulti.png';
@@ -10,6 +12,10 @@ import ShowerRound from '../../assets/PlumbingItems/ShowerRound.png';
 import ShowerSquare from '../../assets/PlumbingItems/ShowerSquare.png';
 import SteelPipes from '../../assets/PlumbingItems/SteelPipes.png';
 import SteelSink from '../../assets/PlumbingItems/SteelSink.png';
+import pvcPipes from '../../assets/PlumbingItems/pvcPipes.png';
+import khaleejPipes from '../../assets/PlumbingItems/khaleejPipes.png';
+import gullies from '../../assets/PlumbingItems/gullies.png';
+import nepro from '../../assets/PlumbingItems/nepro.png';
 
 
 interface Product {
@@ -68,6 +74,30 @@ const products: Product[] = [
     description: "Durable stainless steel kitchen sink with corrosion resistance and easy-to-clean surface finish.", 
     image: SteelSink 
   },
+  { 
+    id: 9, 
+    name: "PVC Pipes", 
+    description: "Standard PVC water pipes designed for reliable water distribution in residential and commercial buildings.", 
+    image: pvcPipes 
+  },
+  { 
+    id: 10, 
+    name: "Khaleej Premium Pipes", 
+    description: "High-quality Khaleej brand pipes offering superior strength and longevity for demanding plumbing applications.", 
+    image: khaleejPipes 
+  },
+  { 
+    id: 11, 
+    name: "Gully Drainage Fittings", 
+    description: "Essential drainage gully fittings for effective wastewater management and floor drainage systems.", 
+    image: gullies
+  },
+  { 
+    id: 12, 
+    name: "Nepro Plumbing Fittings", 
+    description: "Professional-grade Nepro fittings including connectors, elbows, and adapters for complete plumbing solutions.", 
+    image: nepro
+  },
 ];
 
 const PlumbingItems: React.FC = () => {
@@ -79,7 +109,8 @@ const PlumbingItems: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+    <div className=" min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroPlumbingItems/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

@@ -10,6 +10,9 @@ import total from '../assets/ToolsBrands/total.png';
 import makita from '../assets/ToolsBrands/makita.svg';
 import dewesser from '../assets/ToolsBrands/Dewesser.svg';
 import artlife from '../assets/ToolsBrands/ArtLife.png';
+import alfanar from '../assets/ToolsBrands/Alfanar.png';
+import bahra from '../assets/ToolsBrands/Bahra.svg';
+import orient from '../assets/ToolsBrands/Orient.png';
 
 interface BrandLogo {
   image: string;
@@ -26,11 +29,14 @@ const ToolsBrands: React.FC = () => {
     { image: makita, name: 'Makita', route: '/makita-products' },
     { image: dewesser, name: 'Dewesser', route: '/dewesser-products' },
     { image: artlife, name: 'ArtLife', route: '/artlife-products' },
+    { image: alfanar, name: 'Alfanar', route: '/alfanar-products' },
+    { image: bahra, name: 'Bahra', route: '/bahra-products' },
+    { image: orient, name: 'Orient', route: '/orient-products' },
   ];
   const duplicatedLogos: BrandLogo[] = [...logos, ...logos];
 
   return (
-    <section className="py-12 md:py-20 overflow-hidden bg-gray-900">
+    <section className="py-12 md:py-20 overflow-hidden ">
       {/* Main Heading Section */}
       <div className="!pb-6 md:!pb-12 px-4">
         <motion.h2 
@@ -73,7 +79,7 @@ const ToolsBrands: React.FC = () => {
                 }}
                 className="group relative cursor-pointer"
               >
-                <div className="relative w-full aspect-[5/2] bg-white/15 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
+                <div className="relative w-full aspect-[5/2] bg-gray-800 border-2 border-gray-700 hover:border-[#6B5E18] rounded-lg md:rounded-xl p-4 sm:p-5 md:p-6 flex items-center justify-center shadow-md hover:shadow-2xl hover:shadow-[#6B5E18]/30 transition-all duration-500 ease-out">
                   <img 
                     src={brand.image} 
                     alt={brand.name} 

@@ -1,20 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import light from '../assets/light.png'
-import paints from '../assets/paints.png'
-import construction from '../assets/construction.png' 
-import safety from '../assets/safety.png'
-import  plumbing from '../assets/plumbing.png'
-import water from '../assets/water.png'
+import weber from '../assets/PrimaryBrands/weber.png'
+import emtop from '../assets/ToolsBrands/emtop.png'
+import jotun from '../assets/PrimaryBrands/jotun.svg'
+import dcp from '../assets/ConstructionBrands/dcp.svg'
+import bosch from '../assets/ToolsBrands/bosch.png'
+import agm from '../assets/PrimaryBrands/agm.png'
 
 const categories = [
-  { id: 1, title: 'Water Proofing', image:water, route: '/products/waterproofing-items' },
-  { id: 2, title: 'Lighting & Electrical', image:light, route: '/products/electrical-items' },
-  { id: 3, title: 'Paints', image:paints, route: '/products/paints-adhesives' },
-  { id: 4, title: 'Construction Materials', image:construction, route: '/products/construction-materials' },
-  { id: 5, title: 'Safety Products', image:safety, route: '/products/safety-products' },
-  { id: 6, title: 'Plumbing Items', image:plumbing, route: '/products/plumbing-items' },
+  { id: 1, title: 'Weber', image:weber, route: '/weber-products' },
+  { id: 2, title: 'Emtop', image:emtop, route: '/emtop-products' },
+  { id: 3, title: 'Jotun', image:jotun, route: '/jotun-products' },
+  { id: 4, title: 'DCP', image:dcp, route: '/dcp-products' },
+  { id: 5, title: 'Bosch', image:bosch, route: '/bosch-products' },
+  { id: 6, title: 'AGM', image:agm, route: '/agm-products' },
 ];
 
 const TopCategories: React.FC = () => {
@@ -82,11 +82,11 @@ const TopCategories: React.FC = () => {
           {/* Heading Section */}
           <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
             Top
-            <span className="text-[#6B5E18] !ml-2">Categories</span>
+            <span className="text-[#6B5E18] !ml-2">Brands</span>
           </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
-        <p className="text-gray-500 text-lg">Browse Our Best-Selling Categories</p>
+        <p className="text-gray-500 text-lg">Browse Our Best-Selling Brands</p>
       </motion.div>
 
       {/* Categories Grid */}

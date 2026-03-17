@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroWaterProofing from '../../components/IntroWaterProofing'
 // Imports
 import EpoxyFlooring from '../../assets/WaterProofingItems/EpoxyFlooring.png';
 import EpoxyWater from '../../assets/WaterProofingItems/EpoxyWater.png';
@@ -78,7 +79,8 @@ const WaterProofingItems: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+    <div className="min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroWaterProofing/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

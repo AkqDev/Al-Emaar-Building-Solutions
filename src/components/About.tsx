@@ -99,7 +99,7 @@ const About = () => {
             >
               <img
                 src={AboutPage}
-                alt="Warehouse"
+                alt="About"
                 className="w-full h-full object-cover"
               />
             </motion.div>

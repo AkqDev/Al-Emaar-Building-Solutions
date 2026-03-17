@@ -10,7 +10,8 @@ const Makita: React.FC = () => {
     window.open(whatsappUrl, '_blank');
   };
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+    <div className="bg-[#fcfcfc] min-h-screen font-[Poppins]">
+      <div className="py-16 px-6">
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">
@@ -58,6 +59,7 @@ const Makita: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

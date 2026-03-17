@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroElectricItems from '../../components/IntroElectricItems';
 // Imports
 import ElectricFittings from '../../assets/ElectricalItems/ElectricFittings.png';
 import PVCPipes from '../../assets/ElectricalItems/PVCPipes.png';
@@ -129,7 +130,8 @@ const ElectricalItems: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+    <div className="min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroElectricItems/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

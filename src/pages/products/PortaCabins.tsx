@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroCabins from '../../components/IntroCabins'
+
 // Imports
 import Porta1 from '../../assets/PortaCabins/porta1.png';
 import Porta2 from '../../assets/PortaCabins/porta2.png';
@@ -93,6 +95,7 @@ const PortaCabins: React.FC = () => {
 
   return (
     <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroCabins/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

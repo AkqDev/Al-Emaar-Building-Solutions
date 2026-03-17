@@ -1,14 +1,15 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import PedrollaProducts from '../../data/Pedrolla';
+import GroheProducts from '../../data/grohe';
 
-const Pedrolla: React.FC = () => {
+const Grohe: React.FC = () => {
   const handleWhatsAppClick = (productName: string) => {
-    const message = `I want to buy the ${productName} from Pedrolla products`;
+    const message = `I want to buy the ${productName} from Grohe products`;
     const whatsappNumber = '966544837829';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+
   return (
     <div className="bg-[#fcfcfc] min-h-screen font-[Poppins]">
       <div className="py-16 px-6">
@@ -17,19 +18,19 @@ const Pedrolla: React.FC = () => {
         <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
           <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
-            Pedrolla <span className="text-[#6B5E18] ml-2">Products</span>
+            Grohe <span className="text-[#6B5E18] ml-2">Products</span>
           </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
         <p className="text-gray-500 text-base max-w-2xl mx-auto leading-relaxed">
-          Discover reliable Pedrolla submersible pumps engineered for superior water management. 
-          Italian quality and innovation for residential, commercial, and industrial pumping solutions.
+          Discover premium Grohe products engineered for precision and durability. 
+          Find professional-grade equipment for every project.
         </p>
       </div>
 
       {/* Grid */}
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        {PedrollaProducts.map((product) => (
+        {GroheProducts.map((product) => (
           <div key={product.id} className="bg-white rounded-3xl p-8 transition-all duration-300 border border-gray-100 hover:shadow-xl group">
             
             {/* Image Section */}
@@ -65,4 +66,4 @@ const Pedrolla: React.FC = () => {
   );
 };
 
-export default Pedrolla;
+export default Grohe;

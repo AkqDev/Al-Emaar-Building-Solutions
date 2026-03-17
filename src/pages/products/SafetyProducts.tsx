@@ -1,10 +1,12 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroSafety from '../../components/IntroSafety'
+
 // Added .jpeg extensions to imports
-import Safety1 from '../../assets/SafetyProducts/safety1.jpeg';
-import Safety2 from '../../assets/SafetyProducts/safety2.jpeg';
-import Safety3 from '../../assets/SafetyProducts/safety3.jpeg';
+import Safety1 from '../../assets/SafetyProducts/safety1.png';
+import Safety2 from '../../assets/SafetyProducts/safety2.png';
+import Safety3 from '../../assets/SafetyProducts/safety3.png';
 import Safety4 from '../../assets/SafetyProducts/safety4.jpeg';
 import Safety5 from '../../assets/SafetyProducts/safety5.jpeg';
 import Safety6 from '../../assets/SafetyProducts/safety6.jpeg';
@@ -100,6 +102,7 @@ const SafetyProducts: React.FC = () => {
 
   return (
     <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroSafety/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">

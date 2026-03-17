@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+import IntroPaintItems from '../../components/IntroPaintItems'
+
 // Imports
 import EnamelPaint from '../../assets/PaintsItems/EnamelPaint.png';
 import EpoxyPaint from '../../assets/PaintsItems/EpoxyPaint.png';
@@ -65,14 +67,15 @@ const PaintsAndAdhesives: React.FC = () => {
 
   return (
     <div className="bg-[#fcfcfc] min-h-screen py-16 px-6 font-[Poppins]">
+      <IntroPaintItems/>
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-2">
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
           {/* Heading Section */}
           <h2 className="text-2xl md:text-3xl font-black text-center tracking-tighter uppercase italic text-black/90">
-            Paints &
-            <span className="text-[#6B5E18] !ml-2">Adhesives Items</span>
+            Paints
+            <span className="text-[#6B5E18] !ml-2">Items</span>
           </h2>
           <div className="h-[1px] bg-gray-200 flex-grow max-w-[100px]"></div>
         </div>
