@@ -34,7 +34,7 @@ const Navbar = () => {
             <span className="text-sm lg:text-base font-black text-slate-800 uppercase leading-tight">
               Al Emaar Al Areeq
             </span>
-            <span className="text-[11px] lg:text-[13px] font-bold text-[#292A87]">
+            <span className="text-[13px] font-bold text-[#292A87]">
               Building Solutions
             </span>
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <Link 
                   key={index}
                   to={link.path}
-                  className="text-slate-700 font-bold hover:text-[#292A87] cursor-pointer text-sm whitespace-nowrap transition-colors px-6 py-4 flex-shrink-0"
+                  className="text-slate-700 font-bold hover:text-[#292A87] cursor-pointer text-sm whitespace-nowrap transition-colors px-5 py-4 flex-shrink-0"
                 >
                   {link.name}
                 </Link>
