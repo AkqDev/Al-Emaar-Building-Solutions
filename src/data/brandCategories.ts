@@ -37,6 +37,11 @@ import makita from '../assets/ToolsBrands/makita.svg';
 import pedrolla from '../assets/ToolsBrands/pedrolla.png';
 import total from '../assets/ToolsBrands/total.png';
 
+// Electrical Brands
+import alfanar from '../assets/ToolsBrands/Alfanar.png';
+import bahra from '../assets/ToolsBrands/Bahra.svg';
+import orient from '../assets/ToolsBrands/Orient.png';
+
 export type BrandCategory = {
   id: string;
   name: string;
@@ -95,7 +100,7 @@ export const brandCategoriesData: BrandCategory[] = [
         id: 'jeddah-paints',
         name: 'Jeddah Paints',
         logo: jeddah,
-        path: '/jeddah-paints-products',
+        path: '/jeddah-products',
         description: 'Architectural and decorative paints including Paramatti, Buksan, and DECO ranges'
       }
     ]
@@ -314,6 +319,34 @@ export const brandCategoriesData: BrandCategory[] = [
         logo: grohe,
         path: '/grohe-products',
         description: 'Premium bathroom fittings - shower mixers, basin mixers, WC, and accessories'
+      }
+    ]
+  },
+  {
+    id: 'electrical-brands',
+    name: 'Electrical Brands',
+    keywords: ['electrical', 'electric', 'cable', 'wire', 'switch', 'socket', 'circuit breaker', 'mcb', 'panel', 'lighting', 'led', 'fan', 'bulb', 'plug', 'outlet', 'wiring', 'voltage'],
+    brands: [
+      {
+        id: 'alfanar',
+        name: 'Alfanar',
+        logo: alfanar,
+        path: '/alfanar-products',
+        description: 'Electrical cables, circuit breakers, switches, sockets, and wiring accessories'
+      },
+      {
+        id: 'bahra',
+        name: 'Bahra',
+        logo: bahra,
+        path: '/bahra-products',
+        description: 'Copper busbars, cables, switches, and socket outlets'
+      },
+      {
+        id: 'orient',
+        name: 'Orient',
+        logo: orient,
+        path: '/orient-products',
+        description: 'Fans, LED lighting, smart plugs, extension boards, and electrical accessories'
       }
     ]
   }

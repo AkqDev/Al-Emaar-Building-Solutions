@@ -31,6 +31,9 @@ import JeddahPaintsProducts from './JeddahPaints';
 import KhayaatProducts from './khayaat';
 import MadaProducts from './mada';
 import SaudiCeramicsProducts from './saudiCeramics';
+import AlfanarProducts from './Alfanar';
+import BahraProducts from './Bahra';
+import OrientProducts from './Orient';
 
 export interface BrandInfo {
   id: string;
@@ -216,7 +219,7 @@ export const brandsIndex: BrandInfo[] = [
   {
     id: 'jeddah-paints',
     name: 'Jeddah Paints',
-    path: '/jeddah-paints-products',
+    path: '/jeddah-products',
     products: JeddahPaintsProducts
   },
   {
@@ -234,7 +237,25 @@ export const brandsIndex: BrandInfo[] = [
   {
     id: 'saudi-ceramics',
     name: 'Saudi Ceramics',
-    path: '/saudi-ceramics-products',
+    path: '/saudiCeramics-products',
     products: SaudiCeramicsProducts
+  },
+  {
+    id: 'alfanar',
+    name: 'Alfanar',
+    path: '/alfanar-products',
+    products: AlfanarProducts
+  },
+  {
+    id: 'bahra',
+    name: 'Bahra',
+    path: '/bahra-products',
+    products: BahraProducts
+  },
+  {
+    id: 'orient',
+    name: 'Orient',
+    path: '/orient-products',
+    products: OrientProducts
   }
 ];

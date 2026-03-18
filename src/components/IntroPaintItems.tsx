@@ -56,7 +56,7 @@ const IntroPaintItems = () => {
               <h3 className="text-xl md:text-3xl font-poppins font-black text-[#6B5E18] mt-6">
                 Explore Our Brands
               </h3>
-              <div className="grid grid-cols-4 gap-4 mt-4 mb-10 md:mb-0">
+              <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 mb-10 md:mb-0 justify-items-center lg:justify-items-start">
                 {brands.map((brand) => (
                   <Link to={brand.route} key={brand.alt}>
                     <img

@@ -45,7 +45,7 @@ const IntroTools = () => {
               <h3 className="text-xl md:text-3xl font-poppins font-black text-[#6B5E18] mt-6">
                 Explore Our Brands
               </h3>
-              <div className="grid grid-cols-4 gap-4 mt-4 mb-10 md:mb-0">
+              <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-4 mb-10 md:mb-0 justify-items-center lg:justify-items-start">
                 <Link to="/emtop-products">
                   <img src={emtopLogo} alt="Emtop" className="h-23 w-57 p-2 object-contain rounded-xl border border-gray-100 shadow-md hover:scale-105 transition-transform bg-gray-300" />
                 </Link>
