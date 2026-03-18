@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaLinkedinIn, FaSnapchatGhost, FaYoutube } from 'react-icons/fa';
+import { FaTiktok, FaThreads } from 'react-icons/fa6';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import logo from '../assets/logo.png';
 
@@ -105,7 +106,7 @@ const Footer = () => {
 
             {/* Email */}
             <motion.a 
-              href="mailto:Info@alemaralreeq.com"
+              href="mailto:support@alemaarbuildingsolution.com"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -116,7 +117,7 @@ const Footer = () => {
               <div className="bg-white p-3 rounded-full shadow-md">
                 <FaEnvelope className="text-[#292A87] text-lg" />
               </div>
-              <span className="text-sm font-semibold">Info@alemaralreeq.com</span>
+              <span className="text-sm font-semibold">support@alemaarbuildingsolution.com</span>
             </motion.a>
 
             {/* WhatsApp */}
@@ -145,7 +146,7 @@ const Footer = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="flex gap-4 mb-8"
+          className="flex flex-wrap justify-center gap-4 mb-8"
         >
           <motion.a 
             href="https://www.facebook.com/alemarbuildtech/" 
@@ -155,7 +156,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
           >
-            <FaFacebookF size={24} />
+            <FaFacebookF size={22} />
           </motion.a>
           <motion.a 
             href="https://www.instagram.com/alemarbuildtech" 
@@ -165,7 +166,57 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
           >
-            <FaInstagram size={24} />
+            <FaInstagram size={22} />
+          </motion.a>
+          <motion.a 
+            href="https://www.tiktok.com/@alemarbuildtech" 
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15, rotate: 5 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
+          >
+            <FaTiktok size={22} />
+          </motion.a>
+          <motion.a 
+            href="https://www.youtube.com/@alemarbuildtech" 
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15, rotate: -5 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
+          >
+            <FaYoutube size={22} />
+          </motion.a>
+          <motion.a 
+            href="https://www.threads.net/@alemarbuildtech" 
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15, rotate: 5 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
+          >
+            <FaThreads size={22} />
+          </motion.a>
+          <motion.a 
+            href="https://www.snapchat.com/add/alemarbuildtech" 
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15, rotate: -5 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
+          >
+            <FaSnapchatGhost size={22} />
+          </motion.a>
+          <motion.a 
+            href="https://www.linkedin.com/company/alemarbuildtech" 
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15, rotate: 5 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-3 rounded-full text-blue-900 hover:bg-gray-200 transition-colors"
+          >
+            <FaLinkedinIn size={22} />
           </motion.a>
         </motion.div>
 
