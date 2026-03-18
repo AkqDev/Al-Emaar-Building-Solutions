@@ -31,10 +31,10 @@ const Navbar = () => {
             className="h-12 lg:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
           />
           <div className="flex flex-col justify-center">
-            <span className="text-sm lg:text-base font-black text-slate-800 uppercase leading-tight">
+            <span className="text-[11px] md:text-[13px] font-black text-slate-800 uppercase leading-tight">
               Al Emaar Al Areeq
             </span>
-            <span className="text-[13px] font-bold text-[#292A87]">
+            <span className="text-[12px] md:text-[14px] font-bold text-[#292A87]">
               Building Solutions
             </span>
           </div>
@@ -142,8 +142,8 @@ const Navbar = () => {
             <Link to="/" className="flex items-center gap-3" onClick={() => setIsMobileMenuOpen(false)}>
               <img src={logo} alt="Logo" className="h-10 w-auto" />
               <div className="flex flex-col">
-                <span className="text-sm font-black text-slate-800 uppercase">Al Emaar Al Areeq</span>
-                <span className="text-[11px] font-bold text-[#292A87]">Building Solutions</span>
+                <span className="text-[11px] md:text-[13px] font-black text-slate-800 uppercase">Al Emaar Al Areeq</span>
+                <span className="text-[12px] md:text-[14px] font-bold text-[#292A87]">Building Solutions</span>
               </div>
             </Link>
             <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 bg-slate-100 rounded-full">
