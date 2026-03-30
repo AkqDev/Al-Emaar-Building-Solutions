@@ -23,7 +23,6 @@ const Navbar = () => {
     <header className="w-full font-poppins bg-white relative shadow-sm border-b border-slate-100">
       {/* --- Main Row --- */}
       <div className="container mx-auto px-4 py-3 lg:py-4 flex items-center justify-between gap-8">
-        {/* Logo Group - Fixed Alignment */}
         <Link to="/" className="flex items-center gap-3 min-w-fit group cursor-pointer">
           <img 
             src={logo} 
